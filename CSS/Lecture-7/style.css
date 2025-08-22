@@ -1,0 +1,48 @@
+.box{
+    display: inline-block;
+    height: 150px;
+    width: 150px;
+}
+
+.container{
+    background-color: aqua;
+}
+
+.box1{
+    background-color: red;
+
+    position: relative;
+
+    left: 250px;
+
+    z-index: 7;
+
+}
+
+.box2{
+    background-color: blue;
+    position: relative;
+
+    top: 20px;
+    left: 20px;
+
+    z-index: 2;
+
+    /* Made z-index negative to send box2 back */
+}
+
+/* Default z-index for everyone is auto */
+
+.box3{
+    background-color: green;
+
+    position: relative;
+
+    z-index: 5;
+
+
+}
+
+.box4{
+    background-color: orange;
+}

@@ -1,0 +1,21 @@
+
+/* Colour didn't change after using it as div cannot be child of p tag
+   Therefore if we reverse it to div > p it will work */
+
+
+/* So HTML says not everyone can be anyone child */
+
+/* So for block elements like p h1,h2,h3,h4,h5,h6 it cannot have another block element as it's child */
+
+/* section and block can contain anything as child */
+
+
+
+p > div {
+    color: blue;
+}
+
+/* Similarly for ul it cannot have anything other than li as it's child */
+
+/* Inside list or li (is block element only) we can make anyone it's child  */
+

@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+}
+
+header{
+    background-color: cadetblue;
+    position: fixed;
+    width: 100%;
+}
+
+body{
+    height: 1000px;
+}
+
+main{
+    /* margin-top: 60px; */
+
+    /* Didn't use margin here as if we use margin here
+    
+        As h1 tag has fixed position so it left it's original position
+        then if we apply margin for paragraph it will take margin from top most 
+        Therefore we used padding as with margin both the para and h1 gets margin 
+    */
+
+    /* So with margin our boxed was starting from 60px below that's why */
+    /* So it thinks content start from 60px therefore h1 is shifted too */
+
+    padding-top: 60px;
+}
+
+
+/* We can solve our problem of h1 with this also */
+
+h1{
+    color: red;
+    /* top: 0px;
+    left: 0px;
+    right: 0px; */
+
+    /* Remove width 100% and use this */
+}
+

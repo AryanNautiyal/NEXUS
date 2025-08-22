@@ -1,0 +1,107 @@
+.container{
+    background-color: bisque;
+    margin-left: 200px;
+    margin-top: 150px;
+}
+
+.box{
+    height: 100px;
+    width: 100px;
+}
+
+/* Static position is by default */
+
+.box1{
+    background-color: red;
+}
+
+.box2{
+    background-color: aqua;
+    position: relative;
+
+    /* Top bottom left & right is given */
+
+    top: 20px; /* 20px from top is given as gap */ 
+
+    left: 20px; /* So box is now moved 20px to right as 20px gap is given in left */
+
+    /* 
+    
+        It is called relative as relative to it's original position it's moving
+        like if left 20px then it moves 20px towards right similar for others (top bottom & right) 
+
+        Moves 30px away from bottom if used bottom: 30px;
+
+    */
+
+    /* In this if it is moved still no one can come to his original space */
+
+
+
+}
+
+.box3{
+    background-color: lightgreen;
+}
+.box5{
+    background-color: lightgreen;
+    position: absolute;
+
+    /* Our box 3 is visible and box 4 is send behind */
+
+    /* In absolute it leaves it's original position so that any other element can take this space */
+    
+    /* Relative doesn't leave it's original space even if it's there or not but in absolute it leaves it space */
+
+    top: 10px;
+
+    /* So when we write top = 10px then Box 3 leaves it's original space then the empty space is covered by Box 4 */
+
+    /* 
+    
+    So absolute value is moving top bottom left right with respect to first it sees parent if parent has static position then it ignores it
+        
+    Then it search for grandparent's position if that is also static and he cannot find a parent that has any position except for static then it shifts on the basis of viewport 
+    
+    */
+
+}
+
+/* So if we change position of our container to relative then */
+
+/* .container{
+    position: relative;
+} */
+
+/* Then we can see that it moves 10px to bottom or gives gap of 10px from top with respect to container position */
+
+.box4{
+    background-color: lightsalmon;
+}
+
+.box{
+    display: inline-block;
+}
+
+
+.box6, .box7{
+    background-color: aqua;
+}
+
+
+.box7{
+    position: fixed;
+    bottom: 30px;
+
+    /* It has fixed that it sees only from viewporrt only */
+
+    /* So from viewport it moves up 10px and as it's fixed so even if we scroll it will come with the screen */
+    
+    /* It also leaves it's original position */
+}
+
+
+body{
+    height: 1500px;
+}
+

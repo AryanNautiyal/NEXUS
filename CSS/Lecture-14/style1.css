@@ -1,0 +1,144 @@
+.ok{
+    /* text-shadow: 1px 1px; */
+
+    /* Will understand box shadow for this text shadow */
+
+    background-color: blueviolet;
+}
+
+
+.container{
+    height: 800px;
+    width: 800px;
+
+    background-color: aqua;
+
+    padding: 10px; 
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    /* 
+    
+        Used this to save from margin collapse
+    
+        Now padding and margin both will work now
+    
+    */
+}
+
+.box{
+    height: 300px;
+    width: 300px;
+    background-color: orange;
+    margin: 10px;
+
+    /* box-shadow: 5px 10px;  */
+
+    /* Horizontal shadow first (5px) vertical shadow second (10px) */
+
+    /* box-shadow: -5px 10px; */
+    
+    /* Negative used for showing shadow on other side (in this did horizontally) */
+
+    /* box-shadow: -5px -10px; */
+
+    /* box-shadow: 5px 10px red; */
+
+    /* Colour for shadow */
+
+    /* box-shadow: 5px 10px 25px red; */
+
+    /* 3rd parameter is blurr (shadow is blurr) */
+
+    /* box-shadow: 5px 10px 25px 30px greenyellow; */
+
+    /* 4th parameter is spread radius (how much our shadow is spread) */
+
+    /* box-shadow: 0px 0px 3px 10px black; */
+
+    /* With this each side has shadow of 10px on all side */
+
+    /* box-shadow: inset 50px 50px 3px 10px yellow; */
+
+    /* Shadow is now or going inside the box (due to inset) */
+
+
+
+    transition: 3s;
+
+    /* Purpose: Combines 4 properties in one:
+
+        transition-property (what to animate, e.g., opacity).
+
+        transition-duration (how long, e.g., 0.5s).
+
+        transition-timing-function (easing, e.g., ease-in).
+
+        transition-delay (when to start, e.g., 0.2s). 
+        
+    */
+
+    /* Helps to smoothen transitions when hover and we change box CSS */
+
+    transition-timing-function: linear;
+
+    /*
+         Will change with same speed like if we hover without linear it will just instantly change half or more then will slowly change to make transition time 3s
+        So with linear it just evens out the speed
+    */
+
+    transition-timing-function: ease-in;
+
+    /* Transition starts slow then speeds up */
+
+    transition-timing-function: ease-out;
+
+    /* Reverse of ease-in */
+
+    transition-delay: 1s;
+
+    /* Time to wait before starting the transition */
+
+    /* transition-property: background-color; */
+
+    transition-property: all;
+
+    /* which property to apply transition to (only mentioned property will be transitioned) */
+
+    transition-duration: 3s;
+
+    /* Duration of transition */
+
+
+
+
+}
+
+.box:hover{
+    background-color: bisque;
+    width: 500px;
+}
+
+/* First box doesn't have top margin while second box does
+
+    Similarly second box might not have bottom margin so this is called margin collapse 
+    
+    Common for first and last elements
+    
+*/
+
+
+/* 
+
+    Text shadow is same as box shadow just shadow of text is done
+
+*/
+
+
+
+
+

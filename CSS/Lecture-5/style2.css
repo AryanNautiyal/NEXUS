@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+}
+
+.circle{
+    background-color: red;
+    /* width: 200px;
+    height: 200px; */
+    border-radius: 50%;
+    margin: auto;
+    /* margin-top: 200px; */
+
+    /* Automatically brings it to center automatically horizontally */
+
+    width: 60vh;
+    height: 60vh;
+    margin-top: 20vh;
+
+    /* vh and vw are different from each other
+    as screen width is more than screen height therefore used vh here to make it good */
+
+    /* If we put vw in above the circle will be bigger so it goes outside the screen  */
+ 
+    /* much simple this way */
+}

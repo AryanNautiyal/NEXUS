@@ -1,0 +1,112 @@
+
+<!-- Form action -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <form action="url_server"> <!--The values we are entering in forms must be going somewhere so in action in write the url of the server where these values would go -->
+
+        <fieldset> <!--Groups all the form elements (more like just gives a border or box around form elements)-->
+        
+            <legend>User Info</legend> <!-- To make tex appear kind of inside box to just make it look stylish -->
+
+            <!-- Full Name -->
+            <label for="name">Full Name: </label>
+            <input type="text" id="name" name="fname">
+
+            <br><br>
+
+            <!-- Email -->
+            <label for="email">Email: </label>
+            <input type="email" id="email" name="Email">
+
+            <br><br>
+
+            <!-- Phone -->
+            <label for="contact">Phone: </label>
+            <input type="tel" id="contact" name="phone">
+
+            <br><br>
+
+            <!-- Password -->
+            <label for="pass">Password: </label>
+            <input type="password" id="pass" name="password">
+
+            <br><br>
+        </fieldset>
+
+        <fieldset>
+
+            <legend>User Other Info</legend>
+
+        <!-- Gender -->
+        <label for="">Gender: </label>
+        <input type="radio" id="Male" name="Gender" value="Male">
+        <label for="Male">Male</label>
+        <input type="radio" id="Female" name="Gender" value="Female">
+        <label for="Female">Female</label>
+
+        <br><br>
+
+        <!-- DOB -->
+        <label for="date">Date of Birth: </label>
+        <input type="date" id="date" name="DOB" min="2001-01-01" max="2005-12-31">  <!--min max used to limit the DOB so that some specific years old person can give paper-->
+
+        <br><br>
+
+        <!-- School Name -->
+        <label for="school">School Name: </label>
+        <input type="text" id="school" name="School">
+
+        <br><br>
+
+        <!-- Board -->
+        <label for="board">Board: </label>
+        <select id="board" name="Board">
+            <option value="" disabled selected>Select your Board</option>
+            <option value="CBSE">CBSE</option>
+            <option value="ICSE">ICSE</option>
+            <option value="UPBOARD">UPBOARD</option>
+            <option value="UKB">UKB</option>
+
+        </select>
+
+        <br><br>
+
+        <!-- Year of Passing -->
+        <label for="year">Year of Passing: </label>
+        <input type="number" id="year" name="Year" min="2023" max="2025">
+
+        <br><br>
+
+        <!-- Exam Center -->
+        <label for="center">Exam Center: </label>
+        <select name="Center" id="center">
+            <option value="" disabled selected>Select your Exam Center</option>
+            <option value="Delhi">Delhi</option>
+            <option value="Dehradun">Dehradun</option>
+            <option value="Goa">Goa</option>
+            <option value="Mumbai">Mumbai</option>
+            <option value="Kolkata">Kolkata</option>
+            <option value="Hyderabad">Hyderabad</option>
+
+        </select>
+
+        <br><br>
+
+        </fieldset>
+
+        <br><br>
+
+        <!-- Register -->
+        <button>Submit</button>
+
+    </form>
+</body>
+</html>

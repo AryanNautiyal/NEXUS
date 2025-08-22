@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+
+        <!-- for attribute of label helps to associate the label with the id provided in for if we click on label the input field is activated (helpful for blind users) -->
+        <label for="first">Name:</label>
+        <!-- placeholder used to occupy space in input when we don't write anything more like a watermark -->
+        <input type="text" id="first" placeholder="Enter your Name" required name="fname">
+        <!-- required makes it compulsory to fill the given input field as without it won't allow to submit the form -->
+
+        <!-- name tag in input field is for server not for us as the data we are entering is submitting somewhere or can say it's going somewhere -->
+        <!--
+        
+        <input type="text" id="first" required name="fname" value="Random"> 
+         
+        -->
+        <!-- value is used to send a default value to server if in case user didn't enter anything -->
+        <br> <br>
+
+        <label for="id2">Age:</label>
+        <input type="number" id="id2">
+
+        <br><br>
+
+        <button>Submit</button>
+        
+
+
+    </form>
+</body>
+</html>
+
+<!-- 
+
+    form tag
+
+        --- Used to create a form in HTML
+
+        --- It is used to collect user input
+
+        --- It can contain various input elements like text fields, checkboxes, radio buttons, etc
+
+        --- The form data can be sent to a server for processing
+
+        --- The form can be submitted using a submit button
+
+        --- The form can be styled using CSS
+
+        --- The form can be validated using JavaScript
+
+        --- The form can be reset using a reset button
+
+        --- The form can be used to create a login form, registration form, contact form, feedback form, etc
+    
+
+    label tag
+
+        --- Used to define a label for an input element
+
+        --- It is used to provide a description for an input element
+
+        --- It can be associated with an input element using the "for" attribute
+
+        --- It can be used to improve accessibility by providing a label for screen readers
+
+        --- It can be styled using CSS
+
+        --- It can be used to create a form with multiple input elements
+
+        --- It can be used to create a form with validation messages
+
+    
+    input tag
+
+        --- Used to create an input field in a form
+
+        --- It can be used to collect user input
+
+        --- It can have various types like text, number, email, password, etc
+
+        --- It can have various attributes like placeholder, required, disabled, readonly, etc
+
+        --- It can be styled using CSS
+
+        --- It can be validated using JavaScript
+
+        --- It can be used to create a form with multiple input fields
+
+        --- It can be used to create a form with validation messages
+
+-->
+
+
+<!-- 
+
+    Using name attribute in input tag we will get data from user
+
+    key-value attributte : key = name which should be unique and value = value entered by user in input field   or fixed if in case no value entered
+
+    server will see fname (that we used in name attribute) and will get the value entered by user in input field with id first
+
+    in server side there won't be name there instead fname will be used as key and value will be the value entered by user in input field with id first
+
+    fname = Rohit Negi {fname = key & Rohit Negi = value}
+
+    Similarly if we put name="MyAge" for age input then in server MyAge = 25
+
+-->
+
+
+<!-- 
+
+    Example if we take 4 input fields name, age, father name and age.
+
+    then if we send this to server then how will we differetiate between the age of father and user 
+    
+    so we can use name attribute to differentiate between them like name="userAge" and name="fatherAge" so that server will know which is which
+    
+    so in server side we will get userAge = 25 and fatherAge = 50    
+
+    Hence name attribute should be unqiue for each input field to differentiate between them
+
+-->

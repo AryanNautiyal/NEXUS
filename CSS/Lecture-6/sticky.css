@@ -1,0 +1,62 @@
+.container{
+    background-color: bisque;
+    margin-left: 200px;
+    margin-top: 150px;
+    height: 1000px;
+}
+
+.box{
+    height: 100px;
+    width: 100px;
+}
+
+
+.box1{
+    background-color: red;
+}
+
+.box2{
+    background-color: aqua;
+    position: sticky;
+
+    top: 20px; 
+    left: 20px; 
+
+
+}
+
+.box3{
+    background-color: lightgreen;
+}
+
+.box4{
+    background-color: lightsalmon;
+}
+
+.box{
+    display: inline-block;
+}
+
+/* 
+
+    In sticky the box2 moves inside the container only
+    
+    After container has ended the box2 is gone so it's kind of like fixed but not totally
+
+    Yes, for position: sticky to work, you must specify at least one direction (top, bottom, left, or right). Otherwise, it behaves like relative positioning.
+
+    How sticky Works:
+    The element sticks to the viewport when scrolling until it hits its container boundary.
+
+    You must define where it sticks 
+
+    Without a direction, the element won't "stick" to the viewport as intended.
+
+    The direction (top, right, bottom, or left) tells the browser where the element should stick when scrolling.
+
+    like in above case it is stuck ko 20px top and 20px left
+
+    Meaning from 10px below viewport it will move in it's container and will be 20px left from it's container
+    
+
+*/

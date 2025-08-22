@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+}
+
+.container{
+    height: 100%;
+    width: 100%;
+
+    padding: 2rem;
+
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+
+    gap: 1rem;
+
+}
+
+.Box{
+    background-color: orange;
+    font-size: 2rem;
+    border: 5px black solid;
+    height: 200px;
+    width: 200px;
+
+    transition-property: all;
+
+    transition-duration: 2s;
+
+    transition-timing-function: linear;
+}
+
+
+
+.Box1:hover{
+
+    transform: rotateX(90deg);
+
+    /* Rotates box around X axis */
+}
+
+.Box2:hover{
+    transform: rotateY(60deg);
+
+    /* Rotates box around Y axis */
+}
+
+.Box3:hover{
+    transform: rotateZ(60deg);
+
+    /* Rotates box around Z axis */
+}
+
+.Box4:hover{
+    transform: translatex(200px);
+
+    /* Moves box along X axis  */
+}
+
+.Box5:hover{
+    transform: translatey(200px);
+
+    /* Moves box along Y axis */
+}
+
+.Box6:hover{
+    /* transform: translatez(200px); */
+
+    /* Moves box along Z axis but not visible screen is 2D */
+
+    transform: perspective(300px) translatez(200px);
+
+    /* Perspective tells or fixes distance between our view direction and the object ( here let distance be 300px)  */
+
+    /* Z axis moves like outside screen and inside screen */
+
+
+}
+
+.Box7:hover{
+    transform: scaleX(2);
+
+    /* Scaled according to X-axis */
+}
+
+.Box8:hover{
+    transform: scaleY(2);
+
+    /* Scaled according to Y-axis */
+}
+
+.Box9:hover{
+    transform: perspective(200px) scaleZ(2) rotatey(45deg);
+
+    /* Added rotate to see it work */
+
+    /* In 3 dimension the motapa of the box is increasing so rotated to see it as even with perspective not working */
+
+}
+
+
+

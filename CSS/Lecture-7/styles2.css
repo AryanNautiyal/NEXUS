@@ -1,0 +1,81 @@
+.img1 {
+    height: 200px;
+    width: auto;
+
+    /* float: left; */
+
+
+
+    /* Due to this our image floats on left and all the content can now come towards right of the image */
+
+    /* Now block level elements can take up this space */
+
+    /* margin-right: 20px; */
+
+    /* Text was soo close to image so gave margin */
+
+    /* We can also make our photo float to right  */
+
+    float: right;
+    margin-left: 20px;
+
+}
+
+.img2{
+    height: 200px;
+    width: auto;
+
+    /* float: left; */
+
+    float: right;
+
+    /* Can use float for any element */
+
+    clear: right;
+
+
+
+    /* If someone is floating towards right then it atomatically goes below it towards right */
+}
+
+
+    /* 
+    
+    The <img> tag’s default display behavior can be a bit nuanced. Here’s the breakdown:
+
+    1. Default display Value
+    <img> is technically an inline-level (inline) element (like span or a), but it behaves like an inline-block in practice because:
+
+    It respects width/height (unlike pure inline elements like <span>).
+
+    It sits inline with text but can have block-like dimensions.
+
+ */
+
+
+
+
+
+
+
+
+
+ /*  If we place both photo float right then from ghost image write clear left the evil image doesn't go below */
+
+ /* But if we bring both photo towards left of viewport then do same by right then it works */
+
+ /* This happened because we put Ghost img first then Evil img */
+
+ /*
+ 
+    Because at that time when clear left was being executed when both imsges were floating right
+    the evil image didn't come that's why it didn't work
+    
+*/
+
+
+
+/* clear: both; */
+
+/* left and right see if someone's there then if there's someone floating then goes to next line himself */
+

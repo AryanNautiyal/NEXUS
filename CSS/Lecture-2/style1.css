@@ -1,0 +1,142 @@
+/* h1{
+    color: blue;
+} */
+
+/* Colour using rgb */
+h1{
+    color: rgb(13, 220, 18);
+    background-color: antiquewhite;
+}
+
+/* h3{
+    color: pink;
+} */
+
+/* Colour using hexadecimal */
+
+h3{
+    color: #2d34f5; 
+    /* Can give only 6 digits (2 digit per colour {Red, Blue, Greem}) */
+}
+
+/* why 2 digit only as in general we need 8 bit in binary to represent 256 */
+/* But in hexadecimal we only need 2 bit to represent it as 8 bit in binary = 2 bit in hexadecimal as even in electronics we did combination of 4 bits of binary to represent one hexadecimal digit */
+
+/* 2^1 in binary (0,1) & 2^4 in hexa (0-f) */
+
+/* can also see like in binary 15 = 1111 whereas in hexadecimal 15 = f */
+
+/* Hence 4 X 6 = 24 */
+
+
+p {
+    color: hsl(40, 71%, 67%);
+}
+
+/* hsl = hue , saturation and lightness 
+
+    hue is the colour type (a degree on the color wheel from 0 to 360)
+    
+    saturation id the intensity of the colour (0% is grayscale, 100% is fully saturated)
+    
+    lightness defines how light or dark the color is (0% is black, 100% is white)
+*/
+
+ul{
+    color: rgba(106, 20, 89, 0.6);
+}
+
+/* in rgba last element is for opacity (range: 0-1) {to make transparent or increase transparency} */
+
+
+h2{
+    color: #4c50b9de; /* alpha is used here it's same as hexa 2 more digits just added for alpha */
+}
+
+/* Similarly in hsla we get one more element to enter  */
+
+/* a means alpha */
+
+
+ 
+body {
+
+    background-color: white;
+    /* background-color: aqua;
+    background-image: url(./sakuraTree-imgimg.jpg); */
+
+    /* background-size: cover; */ /* because of this our background image covers the whole page */
+
+    /* background-repeat: no-repeat; */ /* if no background-size: cover; is used then the background image is repeating so to prevent that we use this */
+}
+
+
+
+
+h1{
+    font-family:Arial, Helvetica, sans-serif;
+
+    /* If arial is not available then use Helvetica, if Helvetica also not available then use sans-serif, if none available use default browser font */
+
+    /* In font family last value (sans-serif) so there are many fonts inside sans-serif it first uses Arial if not found then
+        Helvetica if not found then any generic font from sans-serif if not found then browser default font  */
+
+    
+    /* So sans-serif is parent and rest all is child */
+
+    font-size: 50%;
+
+    /* 
+    
+    Font size 
+            -- pixel
+
+                    => We play vids in 480p, 720p, 1080p here the 1080 and all is the height and the width is 1920 only 
+
+                    => so when it's in 1080p it's aspect ration is 16:9 (as if (1080X16)/9 = 1920)
+
+                    => 1920 X 1080 is the resolution so in screen in width there will be 1920 pixels and in length will be 1080 pixels
+
+                    => So in case of 720p if we multiply it with 16/9 we get 1280 so resolution is 1280 X 720 pixels
+
+                    => 1 pixel = 1/96 inch (written on internet but it's wrong as it adjusts itself according to the screen)
+
+                    (Aspect ratio defines the proportional relationship between an element's width and height. It’s expressed as a ratio where first no. = width and second no. = height)
+
+                    => Pixel length depend on screen size (playing 1080p in both mobile and laptop)
+
+                    => We see a photo in phone clear photo but in big tv the photo is blurr. The reason is this only pixel adjust their size according to the device
+
+
+            -- em
+
+                    => em is like the parent's font size = my font size
+
+                    => if 2em then my font size is double the font size of my parent
+
+                    => so here our h1 tag is child of body so 2em here would mean that h1 tag font size will be double the size of font of body
+
+                    => body or head font size is dependent on browser
+
+                    => By default in Google Chrome it's 16px for body and head and with inspect determined 2em to be 32px
+            
+            -- rem
+
+                => Will determine size with respect to root
+
+                => So here root is HTML and for our browser HTML font size is 16px
+
+                
+            -- In terms of percent 
+
+                => 100% depends on browser in our browser 16px so 16px is font size
+
+                => Relative to parent font size
+
+
+
+                Extra: FPS = frame per second (in video how many frames per second are changed)
+
+    */
+
+    }

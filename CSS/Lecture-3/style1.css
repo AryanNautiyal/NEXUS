@@ -1,0 +1,144 @@
+/* h1{
+    background-color: aqua;
+} */
+
+
+/* #first{
+    background-color: pink;
+}
+
+.first{
+    background-color: bisque;
+} */
+
+/* Cascading helps in deciding which will be preferred as in this
+    We change the backgroound colour with 3 things of same text 
+    (class , id and element)
+
+*/
+
+/* 
+    Highest Priority : id  --> class --> h1 : Lowest Priority
+
+*/
+
+/* 
+
+    Order <-- Specificity <-- Type <-- Important : Highest Priority
+
+
+
+*/
+
+/* h1{
+    background-color: black;
+    background-color: yellow;
+} */
+
+/* In this case the background colour which comes in the last will be done */
+
+/* h1{
+    background-color: black;
+    background-color: yellow;
+}
+
+h1{
+    font-size: 30px;
+    background-color: pink;
+} */
+
+/* In this case also the one that is after will be executed so whichever one is last will be given priority
+    if and only if both are same (like h1 & h1) <= same order
+*/
+
+
+/* h1{
+    background-color: aqua;
+}
+
+#first{
+    background-color: antiquewhite;
+} */
+
+/* When both selector are different then priority is seen
+
+        --Id
+        --Element
+        --Class
+        --Descendent
+        --Grouping
+
+        So in this which ones the most specific will be given the highest priority (specificity)
+
+        id is most specific then class then descendent then element then grouping
+
+        therefore id has highest priority then attribute then class then child and descendent then element and group element 
+  
+        descendent and child have same and element and group element also have same priority
+*/
+
+/* 
+h1{
+    background-color: aqua;
+} */
+
+/* h1[draggable="true"]{
+    background-color: red;
+} */
+
+/* #first{
+    background-color: antiquewhite;
+} */
+
+/* .first{
+    background-color: blue;
+} */
+
+/* body > h1{
+    background-color: brown;
+} */
+
+
+/* If specificity is same then ordering is used */
+
+h1{
+    background-color: aqua;
+}
+/* Then comes type
+
+    Inline, Internal , External CSS
+    
+    So in this case inline has highest priority then internal and external has same priority so using order it is solved
+
+*/
+
+/* Then important comes  */
+
+h1{
+    background-color: brown !important;
+}
+
+/* Most priority is given to important if somewhere important is written then it will be applied irrespective of other things */
+
+
+/* Inheritance */
+
+body{
+    background-color: aqua;
+}
+
+/* All elements are of same background colour until we specify other bg colour for child */
+
+/*
+
+    So body is parent and all the child have inhereted the bg colour aqua in this case, this is called inheritance 
+
+*/
+
+/* So if we colour bg colour of ul which is parent of li then */
+
+ul{
+    background-color: blue;
+}
+
+/* Then all ul childs li inherits the blue colour */

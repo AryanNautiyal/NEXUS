@@ -1,0 +1,197 @@
+
+
+
+h1, .para{
+    color: orange;
+
+    /* text-align: center; */
+
+    /* Centers the text (by default left) */
+
+    background-color: aqua;
+
+    /* text-align: end; */
+
+    /* Text at the end */
+
+    text-align: justify;
+
+    /* More like ctrl + j in mini project report (all lines ending at same level) */
+
+}
+
+.container{
+    background-color: aquamarine;
+    text-align: center;
+
+    /* Only Centers the content */
+}
+
+
+h2{
+    background-color: pink;
+
+    /* width: 100px; */
+}
+
+pre{
+    background-color: red;
+
+    /* width: 150px; */
+  
+}
+
+button{
+    background-color: brown;
+}
+
+
+
+/* 
+
+    Text align center 
+
+        -- centers the content in block elements
+
+        -- centers the whole element in case of inline
+
+    Same for left right etc
+
+*/
+
+
+
+.lorem{
+    background-color: olivedrab;
+    text-align-last: justify;
+
+    /* Justify tries to cover the whole last line so words are spread out */
+    
+    /* Aligns the last line  */
+}
+
+h4{
+
+    background-color: aqua;
+    
+    /* direction: rtl; */
+
+    /* It plays more vital role than text align
+    
+        text align aligns text or place text on a position 
+        
+        But direction ltr (left) and rtr (right) places text left and right
+        
+        This means when ltr is there we are reading text left to right but with rtr we are reading with right to left 
+        
+        Languages like hindi & enlgish are read left to right but there are some languages like urdu or arabic languages that we read right to left 
+        
+        So they start writing from right to left so it is used for that
+        
+    */
+
+    /* unicode-bidi: bidi-override; */
+
+    /* 
+    
+        Unicode bidirectional makes the letters and words in reverse order to make the language like arabic and urbu proper
+    
+        direction just directs the content so that it is read right to left but to make letter and words reversed it is done by this
+    
+    */
+}
+
+
+span{
+    vertical-align: sub;
+
+    /* Sub like for subscript */
+
+    vertical-align: super;
+
+    /* super for superscript */
+
+    vertical-align: baseline;
+
+    /* Default */
+
+    text-decoration-line: overline;
+
+    /* One line above text */
+
+    text-decoration-line: underline;
+
+    /* Underlines content */
+
+    text-decoration-line: line-through;
+
+    /* Strikes the content */
+
+    text-decoration-line: overline underline;
+
+    /* Used both together */
+
+    text-decoration-color: aqua;
+
+    /* Text ke decorations ka colour change hua */
+
+    text-decoration-style: dotted;
+
+    /* Makes the decoration line dotted */
+
+    text-transform: lowercase;
+
+    /* All letters are lowercase */
+
+    text-transform: capitalize;
+
+    /* Each letter first word is capital */
+
+    text-transform: uppercase;
+
+    /* All letters are uppercase */
+
+}
+
+.pp{
+    text-indent: 100px;
+
+    /* First line in para is given space from left (100px here)  */
+
+    letter-spacing: 3px;
+
+    /* Spacing between letters */
+
+    line-height: 30px;
+
+    /* Spacing between line */
+
+    /* 
+        The line-height property defines the total vertical space allocated for a line of text, measured from the baseline of one line to the baseline of the next line 
+    */
+
+    /* word-spacing: 5px; */
+
+    /* Spacing between words */
+
+    white-space: pre-wrap;
+
+    /* White space refers to spaces, tabs, and line breaks in HTML/CSS. CSS provides properties to control how browsers render these spaces. */
+
+
+    /* Controls how text wraps and handles spaces/newlines. */
+
+        /* 
+        
+            Value	Behavior	Use Case
+            normal	Collapses multiple spaces into one. Text wraps. (Default)	Paragraphs, general text.
+            nowrap	Prevents wrapping; collapses spaces.	Single-line menus, buttons.
+            pre	Preserves spaces/line breaks (like <pre>). No auto-wrap.	Code snippets, ASCII art.
+            pre-wrap	Preserves spaces/line breaks but wraps text.	Poetry, formatted text.
+            pre-line	Collapses spaces but preserves line breaks. Wraps text.	Addresses, user-generated content. 
+        
+        */
+
+        white-space: pre-line;
+
+}

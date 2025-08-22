@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    height: 100vh;
+    width: 100vw;
+    background-color:mediumslateblue;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+
+.container{
+    background-color: rgb(216, 216, 216);
+    height: 70vh;
+    width: 30vw;
+
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; 
+}
+
+.h1-container{
+    width: 100%;
+    padding: 10px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin-top: 40px;
+    margin-bottom: 15px;
+    color: rgb(81, 81, 81);
+}
+
+
+.tic{
+    border-radius: 10px;
+    display: grid;
+    grid-template-rows: repeat(3,1fr);
+    grid-template-columns: repeat(3,1fr);
+
+    width: 80%;
+    height: 60%;
+    background-color: rgb(216, 216, 216);
+
+    gap: 3px;
+}
+
+.cell{
+
+    border-radius: 10px;
+    border: 2px rgb(227, 226, 226) solid;
+    background-color: white;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 80px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+button{
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(12, 181, 12);
+    color: white;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 20px;
+    width: 35%;
+    cursor: pointer;
+}
+
+button:active{
+    opacity: 0.5;
+}
+
+
+.cell:hover{
+    background-color: rgb(245, 244, 244);
+}
+
+
+
+p{
+    margin: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+img{
+    height: 300px;
+    width: 300px;
+    display: flex;
+
+    transition: transform 0.3s;
+
+    transform: scale(1);
+
+}
+
+.img-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.outerCovering{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.btn{
+    position: absolute;
+    top: 10px;
+    width: 13%;
+}
+

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h2>Employee Details Form</h2>
+
+    <form>
+        <label for="name">Full Name: </label>
+        <input type="text" id="name" name="fname">
+
+        <br><br>
+
+
+        <label for="email">Email: </label>
+        <input type="email" id="email" name="Email" required>
+
+        <br><br>
+        
+        
+        <label for="phone">Phone: </label>
+        <input type="tel" id="phone" name="contact">
+
+        <br><br>
+        
+        
+        <label>Gender: </label>
+
+        <!-- In radio we aren't sending any value so if we don't add default value then in backend it returns on so added default value as male & female so that if user selects male then it returns male in backend -->
+        <input type="radio" id="Male" name="Gender" value="Male">
+        <label for="Male">Male</label>
+        <input type="radio" id="Female" name="Gender" value="Female">
+        <label for="Female">Female</label>
+
+        <br><br>
+        
+        
+        <label for="job">Job Title: </label>
+        <input type="text" name="Job" id="job">
+
+        <br><br>
+        
+        
+        <label for="dep">Department: </label>
+        <select id="dep" name="Department">
+            <option value="" disabled selected>Select your Department</option> <!-- Created this so that it can act like placeholder as it was if we didn't put it, it was showing engineer as default so we don't want that so placed it here-->
+            <!-- disabled selected is used to prevent user from selecting this option  -->
+            <option value="Engineer">Engineer</option>
+            <option value="Finance">Finance</option>
+            <option value="IT">IT</option>
+            <option value="Rest">Rest</option>
+        </select>
+        
+        
+        <br><br>
+        
+        
+        <button>Submit</button>
+
+    </form>
+    
+</body>
+</html>
+
+
+<!-- 
+
+    name = value in forms
+    
+    name is used to identify the input field so that in backend we can access that value entered by user from name only
+
+    whereas value is the value entered by the user in the input field 
+
+    if we write value="agree" then if user doesn't enter anything in the input field then it will be considered as "agree" by default
+
+-->
+
+
+
+<!-- 
+
+    After submitting details in the form, the link becomes like this:
+
+    http://127.0.0.1:3000/HTML/Lecture-8/index.html?fname=Aryan&Email=negi%40gmail.com&contact=91919191&Gender=Male&Job=SDE&Department=Engineer
+
+    fname=Aryan
+    Email=negi%40gmail.com
+    contact=91919191
+    Gender=Male
+    Job=SDE
+    Department=Engineer
+
+    These values submitted are also showing in the link so key-value pair or can say name-value pair
+
+
+-->
+
+
+<!-- 
+
+    If we remove value from both radio button and select tags option then
+    
+    http://127.0.0.1:3000/HTML/Lecture-8/first.html?fname=aa&Email=aa%40gmail.com&contact=91919191&Gender=on&Job=SDE&Department=IT
+
+    Gender=on   <-- we can see Gender is on
+    Department=IT   <-- we can see Department is IT so without value it is returning on in backend
+
+-->

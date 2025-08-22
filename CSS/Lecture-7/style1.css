@@ -1,0 +1,23 @@
+div{
+    height: 200px;
+    width: 200px;
+    background-color: aqua;
+
+    /* overflow: visible; */
+
+    /* So we do this */
+
+    /* overflow: hidden; */
+
+    /* Used to hide overflowed data */
+
+    /* overflow: scroll; */
+
+    /* Overflowed content isn't hidden we can just scroll up and down to see the content  */
+
+    overflow: auto;
+
+    /* Automatically gives scroll if content is overflowing */
+}
+
+/* By default overflow is visible */

@@ -1,0 +1,56 @@
+.first{
+    background-color: orange;
+    height: 200px;
+    width: 150px;
+    margin: 40px;
+
+    /* display: inline; */
+
+    /* Now height width doesn't work it's an inline element now  */
+}
+
+.second{
+    background-color: aqua;
+    height: 200px;
+    width: 250px;
+    margin: 40px;
+
+    /* display: inline; */
+
+}
+
+span{
+
+    display: inline-block;
+
+    /* Behaves like inline but we can adjust height and width */
+
+    background-color: green;
+    /* width: 200px;
+    height: 200px; */
+
+    /* No use as inline element will only take as much space as required so no effect of height and width */
+    
+
+    margin: 10px;
+
+    /* It is working but horizontally they are spaced out with margin but vertically they are not spaced out */
+
+    /* (They are sticking to each other in next line & current line one) */
+
+    /* We get margin here but it doesn't show vertical margin  */
+
+    /* display: block; */
+
+    /* Now whole span tag will behave like block element now can give height ,width etc */
+
+    width: 100px;
+    height: 100px;
+
+}
+
+/* display: inline-block; (Hybrid)
+
+    It will behave like inline but we have some powers so we can adjust it's height and weight 
+    
+*/

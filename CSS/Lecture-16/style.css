@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+}
+
+.container{
+    height: 80vh;
+    width: 80vw;
+
+    margin-left: 100px;
+
+    margin-top: 100px;
+
+    padding: 30px;
+
+    display: grid;
+
+    grid-template-columns: repeat(4,1fr);
+
+    grid-template-rows: repeat(3,1fr);
+
+    gap: 10px;
+
+    border: 10px black solid;
+
+    grid-template-areas: 
+    "Box1 Box2 Box2 Box3"
+    "Box1 Box4 Box5 Box6"
+    "Box1 Box7 Box8 Box6";
+
+}
+
+.box{
+    background-color: green;
+
+    font-size: 2rem;
+}
+
+.Box1{
+    grid-area: Box1;
+}
+
+
+.Box2{
+    grid-area: Box2;
+}
+
+.Box3{
+    grid-area: Box3;
+}
+
+.Box4{
+    grid-area: Box4;
+}
+
+
+.Box5{
+    grid-area: Box5;
+}
+
+.Box6{
+    grid-area: Box6;
+}
+
+.Box7{
+    grid-area: Box7;
+}
+
+.Box8{
+    grid-area: Box8;
+}

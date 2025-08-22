@@ -1,0 +1,1512 @@
+
+// Tip: Use excalidraw to draw images and all
+
+// Dummy data created
+
+const restaurants = [
+  {
+    "image": "ten",
+    "name": "Maple & Main",
+    "rating": 4,
+    "food_type": "Thai",
+    "price_for_two": 2417,
+    "location": "Akshardham Temple",
+    "Distance_from_Customer_house": "8.4",
+    "offers": 1,
+    "alcohol": true,
+    "Restaurant_open_time": 20,
+    "Restaurant_close_time": 8
+  },
+  {
+    "image": "one",
+    "name": "Echo & Ember",
+    "rating": 2,
+    "food_type": "Korean",
+    "price_for_two": 2258,
+    "location": "Lotus Temple",
+    "Distance_from_Customer_house": "5.3",
+    "offers": 7,
+    "alcohol": false,
+    "Restaurant_open_time": 6,
+    "Restaurant_close_time": 18
+  },
+  {
+    "image": "three",
+    "name": "Blue Ocean Diner",
+    "rating": 4,
+    "food_type": "American",
+    "price_for_two": 927,
+    "location": "Red Fort",
+    "Distance_from_Customer_house": "6.8",
+    "offers": 23,
+    "alcohol": false,
+    "Restaurant_open_time": 13,
+    "Restaurant_close_time": 1
+  },
+  {
+    "image": "eight",
+    "name": "Copper Pot Kitchen",
+    "rating": 5,
+    "food_type": "American",
+    "price_for_two": 189,
+    "location": "Jama Masjid",
+    "Distance_from_Customer_house": "2.6",
+    "offers": 27,
+    "alcohol": true,
+    "Restaurant_open_time": 3,
+    "Restaurant_close_time": 15
+  },
+  {
+    "image": "four",
+    "name": "Luna Bistro",
+    "rating": 3,
+    "food_type": "American",
+    "price_for_two": 2434,
+    "location": "Akshardham Temple",
+    "Distance_from_Customer_house": "8.5",
+    "offers": 1,
+    "alcohol": false,
+    "Restaurant_open_time": 17,
+    "Restaurant_close_time": 5
+  },
+  {
+    "image": "nine",
+    "name": "Whisk & Ladle",
+    "rating": 2,
+    "food_type": "Italian",
+    "price_for_two": 1727,
+    "location": "Jama Masjid",
+    "Distance_from_Customer_house": "3.4",
+    "offers": 0,
+    "alcohol": false,
+    "Restaurant_open_time": 15,
+    "Restaurant_close_time": 3
+  },
+  {
+    "image": "nine",
+    "name": "Blue Ocean Diner",
+    "rating": 4,
+    "food_type": "French",
+    "price_for_two": 2411,
+    "location": "Lotus Temple",
+    "Distance_from_Customer_house": "3.1",
+    "offers": 13,
+    "alcohol": true,
+    "Restaurant_open_time": 19,
+    "Restaurant_close_time": 7
+  },
+  {
+    "image": "six",
+    "name": "Crimson Plate",
+    "rating": 4,
+    "food_type": "Japanese",
+    "price_for_two": 2179,
+    "location": "Lotus Temple",
+    "Distance_from_Customer_house": "5.4",
+    "offers": 2,
+    "alcohol": true,
+    "Restaurant_open_time": 20,
+    "Restaurant_close_time": 8
+  },
+  {
+    "image": "two",
+    "name": "Crimson Plate",
+    "rating": 4,
+    "food_type": "American",
+    "price_for_two": 1146,
+    "location": "Connaught Place",
+    "Distance_from_Customer_house": "2.0",
+    "offers": 12,
+    "alcohol": false,
+    "Restaurant_open_time": 19,
+    "Restaurant_close_time": 7
+  },
+  {
+    "image": "nine",
+    "name": "Pearl & Pine",
+    "rating": 5,
+    "food_type": "Korean",
+    "price_for_two": 410,
+    "location": "Jama Masjid",
+    "Distance_from_Customer_house": "5.2",
+    "offers": 0,
+    "alcohol": false,
+    "Restaurant_open_time": 11,
+    "Restaurant_close_time": 23
+  },
+  {
+    "image": "two",
+    "name": "The Velvet Table",
+    "rating": 2,
+    "food_type": "Indian",
+    "price_for_two": 2232,
+    "location": "Lodhi Garden",
+    "Distance_from_Customer_house": "10.1",
+    "offers": 28,
+    "alcohol": true,
+    "Restaurant_open_time": 16,
+    "Restaurant_close_time": 4
+  },
+  {
+    "image": "two",
+    "name": "The Hungry Fork",
+    "rating": 5,
+    "food_type": "French",
+    "price_for_two": 614,
+    "location": "Qutub Minar",
+    "Distance_from_Customer_house": "8.2",
+    "offers": 25,
+    "alcohol": false,
+    "Restaurant_open_time": 1,
+    "Restaurant_close_time": 13
+  },
+  {
+    "image": "nine",
+    "name": "Crimson Plate",
+    "rating": 1,
+    "food_type": "Mediterranean",
+    "price_for_two": 178,
+    "location": "Jama Masjid",
+    "Distance_from_Customer_house": "8.1",
+    "offers": 2,
+    "alcohol": false,
+    "Restaurant_open_time": 1,
+    "Restaurant_close_time": 13
+  },
+  {
+    "image": "five",
+    "name": "Echo & Ember",
+    "rating": 4,
+    "food_type": "Korean",
+    "price_for_two": 716,
+    "location": "Red Fort",
+    "Distance_from_Customer_house": "2.6",
+    "offers": 23,
+    "alcohol": false,
+    "Restaurant_open_time": 0,
+    "Restaurant_close_time": 12
+  },
+  {
+    "image": "seven",
+    "name": "The Velvet Table",
+    "rating": 1,
+    "food_type": "Indian",
+    "price_for_two": 1401,
+    "location": "Red Fort",
+    "Distance_from_Customer_house": "5.6",
+    "offers": 1,
+    "alcohol": false,
+    "Restaurant_open_time": 23,
+    "Restaurant_close_time": 11
+  },
+  {
+    "image": "three",
+    "name": "Spice Symphony",
+    "rating": 1,
+    "food_type": "Korean",
+    "price_for_two": 514,
+    "location": "Jama Masjid",
+    "Distance_from_Customer_house": "4.6",
+    "offers": 15,
+    "alcohol": false,
+    "Restaurant_open_time": 18,
+    "Restaurant_close_time": 6
+  },
+  {
+    "image": "one",
+    "name": "Whisk & Ladle",
+    "rating": 2,
+    "food_type": "Mediterranean",
+    "price_for_two": 2022,
+    "location": "Red Fort",
+    "Distance_from_Customer_house": "2.4",
+    "offers": 15,
+    "alcohol": true,
+    "Restaurant_open_time": 21,
+    "Restaurant_close_time": 9
+  },
+  {
+    "image": "four",
+    "name": "Copper Pot Kitchen",
+    "rating": 2,
+    "food_type": "Indian",
+    "price_for_two": 2322,
+    "location": "Akshardham Temple",
+    "Distance_from_Customer_house": "7.8",
+    "offers": 15,
+    "alcohol": false,
+    "Restaurant_open_time": 0,
+    "Restaurant_close_time": 12
+  },
+  {
+    "image": "ten",
+    "name": "Red Lantern Grill",
+    "rating": 3,
+    "food_type": "Korean",
+    "price_for_two": 2117,
+    "location": "Akshardham Temple",
+    "Distance_from_Customer_house": "6.6",
+    "offers": 12,
+    "alcohol": false,
+    "Restaurant_open_time": 3,
+    "Restaurant_close_time": 15
+  },
+  {
+    "image": "seven",
+    "name": "Urban Bites",
+    "rating": 2,
+    "food_type": "Indian",
+    "price_for_two": 534,
+    "location": "Lotus Temple",
+    "Distance_from_Customer_house": "8.8",
+    "offers": 16,
+    "alcohol": true,
+    "Restaurant_open_time": 5,
+    "Restaurant_close_time": 17
+  },
+  {
+    "image": "seven",
+    "name": "Olive & Thyme",
+    "rating": 5,
+    "food_type": "Japanese",
+    "price_for_two": 1303,
+    "location": "India Gate",
+    "Distance_from_Customer_house": "6.8",
+    "offers": 13,
+    "alcohol": false,
+    "Restaurant_open_time": 13,
+    "Restaurant_close_time": 1
+  },
+  {
+    "image": "two",
+    "name": "Crimson Plate",
+    "rating": 4,
+    "food_type": "French",
+    "price_for_two": 1837,
+    "location": "Connaught Place",
+    "Distance_from_Customer_house": "3.2",
+    "offers": 17,
+    "alcohol": false,
+    "Restaurant_open_time": 14,
+    "Restaurant_close_time": 2
+  },
+  {
+    "image": "two",
+    "name": "Pearl & Pine",
+    "rating": 3,
+    "food_type": "Indian",
+    "price_for_two": 1850,
+    "location": "Connaught Place",
+    "Distance_from_Customer_house": "9.1",
+    "offers": 19,
+    "alcohol": true,
+    "Restaurant_open_time": 8,
+    "Restaurant_close_time": 20
+  },
+  {
+    "image": "six",
+    "name": "Harvest Table",
+    "rating": 1,
+    "food_type": "Chinese",
+    "price_for_two": 2495,
+    "location": "Lodhi Garden",
+    "Distance_from_Customer_house": "1.3",
+    "offers": 8,
+    "alcohol": true,
+    "Restaurant_open_time": 18,
+    "Restaurant_close_time": 6
+  },
+  {
+    "image": "four",
+    "name": "Savory Street",
+    "rating": 3,
+    "food_type": "Korean",
+    "price_for_two": 1913,
+    "location": "Connaught Place",
+    "Distance_from_Customer_house": "9.9",
+    "offers": 18,
+    "alcohol": false,
+    "Restaurant_open_time": 0,
+    "Restaurant_close_time": 12
+  },
+  {
+    "image": "two",
+    "name": "The Rustic Oven",
+    "rating": 2,
+    "food_type": "Korean",
+    "price_for_two": 1204,
+    "location": "Red Fort",
+    "Distance_from_Customer_house": "8.0",
+    "offers": 1,
+    "alcohol": true,
+    "Restaurant_open_time": 1,
+    "Restaurant_close_time": 13
+  },
+  {
+    "image": "four",
+    "name": "Midnight Market",
+    "rating": 5,
+    "food_type": "Mexican",
+    "price_for_two": 1767,
+    "location": "Humayun's Tomb",
+    "Distance_from_Customer_house": "10.0",
+    "offers": 21,
+    "alcohol": false,
+    "Restaurant_open_time": 4,
+    "Restaurant_close_time": 16
+  },
+  {
+    "image": "ten",
+    "name": "Luna Bistro",
+    "rating": 1,
+    "food_type": "Thai",
+    "price_for_two": 217,
+    "location": "Akshardham Temple",
+    "Distance_from_Customer_house": "10.3",
+    "offers": 3,
+    "alcohol": false,
+    "Restaurant_open_time": 18,
+    "Restaurant_close_time": 6
+  },
+  {
+    "image": "three",
+    "name": "Echo & Ember",
+    "rating": 3,
+    "food_type": "Japanese",
+    "price_for_two": 324,
+    "location": "Red Fort",
+    "Distance_from_Customer_house": "6.2",
+    "offers": 23,
+    "alcohol": true,
+    "Restaurant_open_time": 4,
+    "Restaurant_close_time": 16
+  },
+  {
+    "image": "six",
+    "name": "Maple & Main",
+    "rating": 2,
+    "food_type": "Chinese",
+    "price_for_two": 1490,
+    "location": "India Gate",
+    "Distance_from_Customer_house": "7.2",
+    "offers": 19,
+    "alcohol": true,
+    "Restaurant_open_time": 18,
+    "Restaurant_close_time": 6
+  },
+  {
+    "image": "eight",
+    "name": "Urban Bites",
+    "rating": 4,
+    "food_type": "Korean",
+    "price_for_two": 2176,
+    "location": "Lodhi Garden",
+    "Distance_from_Customer_house": "10.5",
+    "offers": 2,
+    "alcohol": true,
+    "Restaurant_open_time": 0,
+    "Restaurant_close_time": 12
+  },
+  {
+    "image": "seven",
+    "name": "Urban Bites",
+    "rating": 3,
+    "food_type": "French",
+    "price_for_two": 1827,
+    "location": "Qutub Minar",
+    "Distance_from_Customer_house": "8.0",
+    "offers": 13,
+    "alcohol": true,
+    "Restaurant_open_time": 18,
+    "Restaurant_close_time": 6
+  },
+  {
+    "image": "nine",
+    "name": "The Hungry Fork",
+    "rating": 4,
+    "food_type": "American",
+    "price_for_two": 1995,
+    "location": "India Gate",
+    "Distance_from_Customer_house": "3.6",
+    "offers": 13,
+    "alcohol": true,
+    "Restaurant_open_time": 10,
+    "Restaurant_close_time": 22
+  },
+  {
+    "image": "nine",
+    "name": "Spice Symphony",
+    "rating": 3,
+    "food_type": "Korean",
+    "price_for_two": 2046,
+    "location": "Connaught Place",
+    "Distance_from_Customer_house": "9.7",
+    "offers": 17,
+    "alcohol": false,
+    "Restaurant_open_time": 2,
+    "Restaurant_close_time": 14
+  },
+  {
+    "image": "eight",
+    "name": "The Rustic Oven",
+    "rating": 4,
+    "food_type": "Thai",
+    "price_for_two": 596,
+    "location": "Akshardham Temple",
+    "Distance_from_Customer_house": "9.0",
+    "offers": 22,
+    "alcohol": false,
+    "Restaurant_open_time": 6,
+    "Restaurant_close_time": 18
+  },
+  {
+    "image": "nine",
+    "name": "The Hungry Fork",
+    "rating": 3,
+    "food_type": "Mexican",
+    "price_for_two": 2425,
+    "location": "Connaught Place",
+    "Distance_from_Customer_house": "5.1",
+    "offers": 29,
+    "alcohol": false,
+    "Restaurant_open_time": 20,
+    "Restaurant_close_time": 8
+  },
+  {
+    "image": "ten",
+    "name": "Red Lantern Grill",
+    "rating": 4,
+    "food_type": "Thai",
+    "price_for_two": 1226,
+    "location": "Akshardham Temple",
+    "Distance_from_Customer_house": "2.5",
+    "offers": 20,
+    "alcohol": false,
+    "Restaurant_open_time": 21,
+    "Restaurant_close_time": 9
+  },
+  {
+    "image": "five",
+    "name": "The Velvet Table",
+    "rating": 2,
+    "food_type": "Chinese",
+    "price_for_two": 1453,
+    "location": "Humayun's Tomb",
+    "Distance_from_Customer_house": "7.5",
+    "offers": 26,
+    "alcohol": false,
+    "Restaurant_open_time": 7,
+    "Restaurant_close_time": 19
+  },
+  {
+    "image": "two",
+    "name": "Maple & Main",
+    "rating": 5,
+    "food_type": "Indian",
+    "price_for_two": 777,
+    "location": "India Gate",
+    "Distance_from_Customer_house": "1.1",
+    "offers": 18,
+    "alcohol": false,
+    "Restaurant_open_time": 17,
+    "Restaurant_close_time": 5
+  },
+  {
+    "image": "three",
+    "name": "Olive & Thyme",
+    "rating": 2,
+    "food_type": "Thai",
+    "price_for_two": 2417,
+    "location": "Qutub Minar",
+    "Distance_from_Customer_house": "2.3",
+    "offers": 24,
+    "alcohol": false,
+    "Restaurant_open_time": 5,
+    "Restaurant_close_time": 17
+  },
+  {
+    "image": "nine",
+    "name": "Luna Bistro",
+    "rating": 1,
+    "food_type": "Italian",
+    "price_for_two": 1809,
+    "location": "Akshardham Temple",
+    "Distance_from_Customer_house": "4.2",
+    "offers": 6,
+    "alcohol": false,
+    "Restaurant_open_time": 13,
+    "Restaurant_close_time": 1
+  },
+  {
+    "image": "one",
+    "name": "The Hungry Fork",
+    "rating": 3,
+    "food_type": "Indian",
+    "price_for_two": 697,
+    "location": "Rashtrapati Bhavan",
+    "Distance_from_Customer_house": "4.3",
+    "offers": 18,
+    "alcohol": false,
+    "Restaurant_open_time": 9,
+    "Restaurant_close_time": 21
+  },
+  {
+    "image": "four",
+    "name": "Whisk & Ladle",
+    "rating": 2,
+    "food_type": "Japanese",
+    "price_for_two": 2213,
+    "location": "Lotus Temple",
+    "Distance_from_Customer_house": "3.8",
+    "offers": 4,
+    "alcohol": false,
+    "Restaurant_open_time": 14,
+    "Restaurant_close_time": 2
+  },
+  {
+    "image": "five",
+    "name": "Red Lantern Grill",
+    "rating": 4,
+    "food_type": "Mediterranean",
+    "price_for_two": 1496,
+    "location": "Lotus Temple",
+    "Distance_from_Customer_house": "10.2",
+    "offers": 23,
+    "alcohol": true,
+    "Restaurant_open_time": 20,
+    "Restaurant_close_time": 8
+  },
+  {
+    "image": "ten",
+    "name": "The Golden Spoon",
+    "rating": 5,
+    "food_type": "Indian",
+    "price_for_two": 2429,
+    "location": "Connaught Place",
+    "Distance_from_Customer_house": "7.3",
+    "offers": 7,
+    "alcohol": false,
+    "Restaurant_open_time": 3,
+    "Restaurant_close_time": 15
+  },
+  {
+    "image": "one",
+    "name": "Midnight Market",
+    "rating": 1,
+    "food_type": "Italian",
+    "price_for_two": 609,
+    "location": "Connaught Place",
+    "Distance_from_Customer_house": "5.0",
+    "offers": 25,
+    "alcohol": false,
+    "Restaurant_open_time": 6,
+    "Restaurant_close_time": 18
+  },
+  {
+    "image": "five",
+    "name": "Harvest Table",
+    "rating": 1,
+    "food_type": "Japanese",
+    "price_for_two": 524,
+    "location": "Lodhi Garden",
+    "Distance_from_Customer_house": "1.3",
+    "offers": 13,
+    "alcohol": false,
+    "Restaurant_open_time": 13,
+    "Restaurant_close_time": 1
+  },
+  {
+    "image": "six",
+    "name": "The Velvet Table",
+    "rating": 5,
+    "food_type": "Mexican",
+    "price_for_two": 2103,
+    "location": "Red Fort",
+    "Distance_from_Customer_house": "1.5",
+    "offers": 3,
+    "alcohol": true,
+    "Restaurant_open_time": 6,
+    "Restaurant_close_time": 18
+  },
+  {
+    "image": "six",
+    "name": "Whisk & Ladle",
+    "rating": 5,
+    "food_type": "Korean",
+    "price_for_two": 141,
+    "location": "Lodhi Garden",
+    "Distance_from_Customer_house": "7.3",
+    "offers": 21,
+    "alcohol": false,
+    "Restaurant_open_time": 17,
+    "Restaurant_close_time": 5
+  },
+  {
+    "image": "two",
+    "name": "Maple & Main",
+    "rating": 5,
+    "food_type": "Mexican",
+    "price_for_two": 2315,
+    "location": "Qutub Minar",
+    "Distance_from_Customer_house": "1.3",
+    "offers": 26,
+    "alcohol": false,
+    "Restaurant_open_time": 21,
+    "Restaurant_close_time": 9
+  },
+  {
+    "image": "ten",
+    "name": "Copper Pot Kitchen",
+    "rating": 4,
+    "food_type": "Italian",
+    "price_for_two": 843,
+    "location": "Connaught Place",
+    "Distance_from_Customer_house": "5.3",
+    "offers": 5,
+    "alcohol": false,
+    "Restaurant_open_time": 17,
+    "Restaurant_close_time": 5
+  },
+  {
+    "image": "seven",
+    "name": "Spice Symphony",
+    "rating": 3,
+    "food_type": "Mexican",
+    "price_for_two": 683,
+    "location": "Connaught Place",
+    "Distance_from_Customer_house": "3.4",
+    "offers": 1,
+    "alcohol": false,
+    "Restaurant_open_time": 14,
+    "Restaurant_close_time": 2
+  },
+  {
+    "image": "four",
+    "name": "Spice Symphony",
+    "rating": 3,
+    "food_type": "Japanese",
+    "price_for_two": 1643,
+    "location": "Lodhi Garden",
+    "Distance_from_Customer_house": "5.3",
+    "offers": 22,
+    "alcohol": false,
+    "Restaurant_open_time": 13,
+    "Restaurant_close_time": 1
+  },
+  {
+    "image": "five",
+    "name": "Savory Street",
+    "rating": 1,
+    "food_type": "American",
+    "price_for_two": 1897,
+    "location": "Jama Masjid",
+    "Distance_from_Customer_house": "1.7",
+    "offers": 12,
+    "alcohol": true,
+    "Restaurant_open_time": 16,
+    "Restaurant_close_time": 4
+  },
+  {
+    "image": "three",
+    "name": "The Hungry Fork",
+    "rating": 1,
+    "food_type": "Korean",
+    "price_for_two": 614,
+    "location": "Lodhi Garden",
+    "Distance_from_Customer_house": "5.4",
+    "offers": 6,
+    "alcohol": true,
+    "Restaurant_open_time": 22,
+    "Restaurant_close_time": 10
+  },
+  {
+    "image": "one",
+    "name": "Urban Bites",
+    "rating": 1,
+    "food_type": "Korean",
+    "price_for_two": 2302,
+    "location": "Lotus Temple",
+    "Distance_from_Customer_house": "1.4",
+    "offers": 19,
+    "alcohol": false,
+    "Restaurant_open_time": 3,
+    "Restaurant_close_time": 15
+  },
+  {
+    "image": "nine",
+    "name": "The Rustic Oven",
+    "rating": 2,
+    "food_type": "Thai",
+    "price_for_two": 1511,
+    "location": "India Gate",
+    "Distance_from_Customer_house": "2.7",
+    "offers": 5,
+    "alcohol": false,
+    "Restaurant_open_time": 15,
+    "Restaurant_close_time": 3
+  },
+  {
+    "image": "four",
+    "name": "The Golden Spoon",
+    "rating": 4,
+    "food_type": "Korean",
+    "price_for_two": 531,
+    "location": "Connaught Place",
+    "Distance_from_Customer_house": "8.6",
+    "offers": 1,
+    "alcohol": true,
+    "Restaurant_open_time": 16,
+    "Restaurant_close_time": 4
+  },
+  {
+    "image": "seven",
+    "name": "Urban Bites",
+    "rating": 1,
+    "food_type": "French",
+    "price_for_two": 1386,
+    "location": "Rashtrapati Bhavan",
+    "Distance_from_Customer_house": "4.4",
+    "offers": 10,
+    "alcohol": false,
+    "Restaurant_open_time": 23,
+    "Restaurant_close_time": 11
+  },
+  {
+    "image": "nine",
+    "name": "Crimson Plate",
+    "rating": 2,
+    "food_type": "Mexican",
+    "price_for_two": 1617,
+    "location": "Jama Masjid",
+    "Distance_from_Customer_house": "3.7",
+    "offers": 25,
+    "alcohol": false,
+    "Restaurant_open_time": 11,
+    "Restaurant_close_time": 23
+  },
+  {
+    "image": "ten",
+    "name": "The Rustic Oven",
+    "rating": 4,
+    "food_type": "Mediterranean",
+    "price_for_two": 1451,
+    "location": "Lodhi Garden",
+    "Distance_from_Customer_house": "3.5",
+    "offers": 23,
+    "alcohol": false,
+    "Restaurant_open_time": 15,
+    "Restaurant_close_time": 3
+  },
+  {
+    "image": "eight",
+    "name": "Blue Ocean Diner",
+    "rating": 2,
+    "food_type": "Korean",
+    "price_for_two": 2312,
+    "location": "Connaught Place",
+    "Distance_from_Customer_house": "10.5",
+    "offers": 1,
+    "alcohol": false,
+    "Restaurant_open_time": 6,
+    "Restaurant_close_time": 18
+  },
+  {
+    "image": "eight",
+    "name": "Olive & Thyme",
+    "rating": 4,
+    "food_type": "Chinese",
+    "price_for_two": 2113,
+    "location": "Connaught Place",
+    "Distance_from_Customer_house": "4.8",
+    "offers": 0,
+    "alcohol": false,
+    "Restaurant_open_time": 18,
+    "Restaurant_close_time": 6
+  },
+  {
+    "image": "two",
+    "name": "Midnight Market",
+    "rating": 2,
+    "food_type": "French",
+    "price_for_two": 2088,
+    "location": "Humayun's Tomb",
+    "Distance_from_Customer_house": "4.6",
+    "offers": 29,
+    "alcohol": false,
+    "Restaurant_open_time": 5,
+    "Restaurant_close_time": 17
+  },
+  {
+    "image": "three",
+    "name": "Spice Symphony",
+    "rating": 1,
+    "food_type": "Thai",
+    "price_for_two": 781,
+    "location": "Humayun's Tomb",
+    "Distance_from_Customer_house": "7.4",
+    "offers": 2,
+    "alcohol": false,
+    "Restaurant_open_time": 11,
+    "Restaurant_close_time": 23
+  },
+  {
+    "image": "six",
+    "name": "Copper Pot Kitchen",
+    "rating": 4,
+    "food_type": "French",
+    "price_for_two": 1405,
+    "location": "Connaught Place",
+    "Distance_from_Customer_house": "2.2",
+    "offers": 17,
+    "alcohol": false,
+    "Restaurant_open_time": 15,
+    "Restaurant_close_time": 3
+  },
+  {
+    "image": "three",
+    "name": "Olive & Thyme",
+    "rating": 5,
+    "food_type": "Japanese",
+    "price_for_two": 825,
+    "location": "Humayun's Tomb",
+    "Distance_from_Customer_house": "6.7",
+    "offers": 13,
+    "alcohol": false,
+    "Restaurant_open_time": 5,
+    "Restaurant_close_time": 17
+  },
+  {
+    "image": "three",
+    "name": "The Hungry Fork",
+    "rating": 5,
+    "food_type": "French",
+    "price_for_two": 826,
+    "location": "Humayun's Tomb",
+    "Distance_from_Customer_house": "7.9",
+    "offers": 0,
+    "alcohol": false,
+    "Restaurant_open_time": 20,
+    "Restaurant_close_time": 8
+  },
+  {
+    "image": "seven",
+    "name": "Midnight Market",
+    "rating": 1,
+    "food_type": "French",
+    "price_for_two": 1421,
+    "location": "Jama Masjid",
+    "Distance_from_Customer_house": "9.7",
+    "offers": 17,
+    "alcohol": false,
+    "Restaurant_open_time": 22,
+    "Restaurant_close_time": 10
+  },
+  {
+    "image": "nine",
+    "name": "Spice Symphony",
+    "rating": 1,
+    "food_type": "Indian",
+    "price_for_two": 272,
+    "location": "Rashtrapati Bhavan",
+    "Distance_from_Customer_house": "9.0",
+    "offers": 11,
+    "alcohol": false,
+    "Restaurant_open_time": 11,
+    "Restaurant_close_time": 23
+  },
+  {
+    "image": "four",
+    "name": "Blue Ocean Diner",
+    "rating": 3,
+    "food_type": "Korean",
+    "price_for_two": 1091,
+    "location": "Rashtrapati Bhavan",
+    "Distance_from_Customer_house": "4.8",
+    "offers": 10,
+    "alcohol": false,
+    "Restaurant_open_time": 18,
+    "Restaurant_close_time": 6
+  },
+  {
+    "image": "four",
+    "name": "The Velvet Table",
+    "rating": 3,
+    "food_type": "Indian",
+    "price_for_two": 290,
+    "location": "Akshardham Temple",
+    "Distance_from_Customer_house": "3.6",
+    "offers": 18,
+    "alcohol": true,
+    "Restaurant_open_time": 2,
+    "Restaurant_close_time": 14
+  },
+  {
+    "image": "five",
+    "name": "Luna Bistro",
+    "rating": 1,
+    "food_type": "Italian",
+    "price_for_two": 509,
+    "location": "Connaught Place",
+    "Distance_from_Customer_house": "7.0",
+    "offers": 20,
+    "alcohol": false,
+    "Restaurant_open_time": 9,
+    "Restaurant_close_time": 21
+  },
+  {
+    "image": "seven",
+    "name": "Whisk & Ladle",
+    "rating": 3,
+    "food_type": "Indian",
+    "price_for_two": 1886,
+    "location": "Jama Masjid",
+    "Distance_from_Customer_house": "1.3",
+    "offers": 8,
+    "alcohol": false,
+    "Restaurant_open_time": 18,
+    "Restaurant_close_time": 6
+  },
+  {
+    "image": "eight",
+    "name": "Echo & Ember",
+    "rating": 4,
+    "food_type": "Korean",
+    "price_for_two": 1491,
+    "location": "Qutub Minar",
+    "Distance_from_Customer_house": "3.3",
+    "offers": 2,
+    "alcohol": false,
+    "Restaurant_open_time": 16,
+    "Restaurant_close_time": 4
+  },
+  {
+    "image": "four",
+    "name": "Saffron Garden",
+    "rating": 4,
+    "food_type": "Indian",
+    "price_for_two": 1592,
+    "location": "Rashtrapati Bhavan",
+    "Distance_from_Customer_house": "4.2",
+    "offers": 24,
+    "alcohol": true,
+    "Restaurant_open_time": 1,
+    "Restaurant_close_time": 13
+  },
+  {
+    "image": "seven",
+    "name": "Echo & Ember",
+    "rating": 4,
+    "food_type": "Thai",
+    "price_for_two": 689,
+    "location": "Rashtrapati Bhavan",
+    "Distance_from_Customer_house": "10.0",
+    "offers": 14,
+    "alcohol": false,
+    "Restaurant_open_time": 14,
+    "Restaurant_close_time": 2
+  },
+  {
+    "image": "ten",
+    "name": "Copper Pot Kitchen",
+    "rating": 3,
+    "food_type": "Italian",
+    "price_for_two": 1899,
+    "location": "Rashtrapati Bhavan",
+    "Distance_from_Customer_house": "9.0",
+    "offers": 22,
+    "alcohol": true,
+    "Restaurant_open_time": 11,
+    "Restaurant_close_time": 23
+  },
+  {
+    "image": "four",
+    "name": "The Golden Spoon",
+    "rating": 2,
+    "food_type": "Chinese",
+    "price_for_two": 2054,
+    "location": "Qutub Minar",
+    "Distance_from_Customer_house": "6.2",
+    "offers": 9,
+    "alcohol": false,
+    "Restaurant_open_time": 5,
+    "Restaurant_close_time": 17
+  },
+  {
+    "image": "three",
+    "name": "Red Lantern Grill",
+    "rating": 2,
+    "food_type": "Italian",
+    "price_for_two": 1892,
+    "location": "Lodhi Garden",
+    "Distance_from_Customer_house": "4.1",
+    "offers": 11,
+    "alcohol": true,
+    "Restaurant_open_time": 15,
+    "Restaurant_close_time": 3
+  },
+  {
+    "image": "eight",
+    "name": "Urban Bites",
+    "rating": 4,
+    "food_type": "Chinese",
+    "price_for_two": 334,
+    "location": "Humayun's Tomb",
+    "Distance_from_Customer_house": "3.4",
+    "offers": 1,
+    "alcohol": false,
+    "Restaurant_open_time": 0,
+    "Restaurant_close_time": 12
+  },
+  {
+    "image": "three",
+    "name": "Urban Bites",
+    "rating": 2,
+    "food_type": "French",
+    "price_for_two": 193,
+    "location": "Connaught Place",
+    "Distance_from_Customer_house": "6.7",
+    "offers": 21,
+    "alcohol": false,
+    "Restaurant_open_time": 19,
+    "Restaurant_close_time": 7
+  },
+  {
+    "image": "seven",
+    "name": "Crimson Plate",
+    "rating": 3,
+    "food_type": "Chinese",
+    "price_for_two": 306,
+    "location": "Lodhi Garden",
+    "Distance_from_Customer_house": "5.8",
+    "offers": 10,
+    "alcohol": false,
+    "Restaurant_open_time": 15,
+    "Restaurant_close_time": 3
+  },
+  {
+    "image": "seven",
+    "name": "Red Lantern Grill",
+    "rating": 3,
+    "food_type": "Japanese",
+    "price_for_two": 416,
+    "location": "Connaught Place",
+    "Distance_from_Customer_house": "5.6",
+    "offers": 17,
+    "alcohol": true,
+    "Restaurant_open_time": 21,
+    "Restaurant_close_time": 9
+  },
+  {
+    "image": "four",
+    "name": "Copper Pot Kitchen",
+    "rating": 4,
+    "food_type": "Chinese",
+    "price_for_two": 1554,
+    "location": "Lodhi Garden",
+    "Distance_from_Customer_house": "1.2",
+    "offers": 3,
+    "alcohol": true,
+    "Restaurant_open_time": 19,
+    "Restaurant_close_time": 7
+  },
+  {
+    "image": "ten",
+    "name": "Maple & Main",
+    "rating": 4,
+    "food_type": "Mediterranean",
+    "price_for_two": 550,
+    "location": "Lodhi Garden",
+    "Distance_from_Customer_house": "8.4",
+    "offers": 4,
+    "alcohol": false,
+    "Restaurant_open_time": 14,
+    "Restaurant_close_time": 2
+  },
+  {
+    "image": "one",
+    "name": "The Golden Spoon",
+    "rating": 5,
+    "food_type": "French",
+    "price_for_two": 1743,
+    "location": "India Gate",
+    "Distance_from_Customer_house": "10.7",
+    "offers": 6,
+    "alcohol": false,
+    "Restaurant_open_time": 6,
+    "Restaurant_close_time": 18
+  },
+  {
+    "image": "one",
+    "name": "Spice Symphony",
+    "rating": 2,
+    "food_type": "French",
+    "price_for_two": 758,
+    "location": "Jama Masjid",
+    "Distance_from_Customer_house": "2.9",
+    "offers": 16,
+    "alcohol": false,
+    "Restaurant_open_time": 19,
+    "Restaurant_close_time": 7
+  },
+  {
+    "image": "six",
+    "name": "Urban Bites",
+    "rating": 4,
+    "food_type": "American",
+    "price_for_two": 539,
+    "location": "Jama Masjid",
+    "Distance_from_Customer_house": "9.6",
+    "offers": 0,
+    "alcohol": false,
+    "Restaurant_open_time": 4,
+    "Restaurant_close_time": 16
+  },
+  {
+    "image": "six",
+    "name": "Spice Symphony",
+    "rating": 4,
+    "food_type": "Thai",
+    "price_for_two": 398,
+    "location": "Connaught Place",
+    "Distance_from_Customer_house": "6.6",
+    "offers": 19,
+    "alcohol": false,
+    "Restaurant_open_time": 4,
+    "Restaurant_close_time": 16
+  },
+  {
+    "image": "five",
+    "name": "Crimson Plate",
+    "rating": 1,
+    "food_type": "Chinese",
+    "price_for_two": 2497,
+    "location": "Lotus Temple",
+    "Distance_from_Customer_house": "8.6",
+    "offers": 12,
+    "alcohol": true,
+    "Restaurant_open_time": 21,
+    "Restaurant_close_time": 9
+  },
+  {
+    "image": "two",
+    "name": "Urban Bites",
+    "rating": 5,
+    "food_type": "Mexican",
+    "price_for_two": 1635,
+    "location": "Rashtrapati Bhavan",
+    "Distance_from_Customer_house": "2.9",
+    "offers": 12,
+    "alcohol": true,
+    "Restaurant_open_time": 5,
+    "Restaurant_close_time": 17
+  },
+  {
+    "image": "eight",
+    "name": "Red Lantern Grill",
+    "rating": 3,
+    "food_type": "French",
+    "price_for_two": 1462,
+    "location": "Rashtrapati Bhavan",
+    "Distance_from_Customer_house": "7.4",
+    "offers": 12,
+    "alcohol": false,
+    "Restaurant_open_time": 2,
+    "Restaurant_close_time": 14
+  },
+  {
+    "image": "one",
+    "name": "Red Lantern Grill",
+    "rating": 5,
+    "food_type": "Japanese",
+    "price_for_two": 2386,
+    "location": "Humayun's Tomb",
+    "Distance_from_Customer_house": "6.3",
+    "offers": 16,
+    "alcohol": true,
+    "Restaurant_open_time": 9,
+    "Restaurant_close_time": 21
+  },
+  {
+    "image": "two",
+    "name": "Crimson Plate",
+    "rating": 3,
+    "food_type": "Japanese",
+    "price_for_two": 129,
+    "location": "Qutub Minar",
+    "Distance_from_Customer_house": "6.1",
+    "offers": 12,
+    "alcohol": false,
+    "Restaurant_open_time": 11,
+    "Restaurant_close_time": 23
+  },
+  {
+    "image": "seven",
+    "name": "Urban Bites",
+    "rating": 1,
+    "food_type": "Mexican",
+    "price_for_two": 224,
+    "location": "Humayun's Tomb",
+    "Distance_from_Customer_house": "5.1",
+    "offers": 7,
+    "alcohol": true,
+    "Restaurant_open_time": 13,
+    "Restaurant_close_time": 1
+  },
+  {
+    "image": "one",
+    "name": "Saffron Garden",
+    "rating": 3,
+    "food_type": "Mediterranean",
+    "price_for_two": 2487,
+    "location": "Connaught Place",
+    "Distance_from_Customer_house": "1.5",
+    "offers": 23,
+    "alcohol": true,
+    "Restaurant_open_time": 13,
+    "Restaurant_close_time": 1
+  },
+  {
+    "image": "one",
+    "name": "The Rustic Oven",
+    "rating": 3,
+    "food_type": "French",
+    "price_for_two": 827,
+    "location": "India Gate",
+    "Distance_from_Customer_house": "5.8",
+    "offers": 8,
+    "alcohol": true,
+    "Restaurant_open_time": 5,
+    "Restaurant_close_time": 17
+  },
+  {
+    "image": "four",
+    "name": "The Velvet Table",
+    "rating": 2,
+    "food_type": "Chinese",
+    "price_for_two": 789,
+    "location": "Connaught Place",
+    "Distance_from_Customer_house": "5.2",
+    "offers": 25,
+    "alcohol": false,
+    "Restaurant_open_time": 2,
+    "Restaurant_close_time": 14
+  },
+  {
+    "image": "four",
+    "name": "The Golden Spoon",
+    "rating": 1,
+    "food_type": "Thai",
+    "price_for_two": 2328,
+    "location": "Lodhi Garden",
+    "Distance_from_Customer_house": "9.9",
+    "offers": 13,
+    "alcohol": false,
+    "Restaurant_open_time": 8,
+    "Restaurant_close_time": 20
+  }
+];
+
+
+
+function getrestaurant(restaurants){
+
+    const root = document.getElementById('root');
+
+    restaurants.forEach((restaurant)=>{
+
+        // Create a card
+
+        // 1: Image
+
+        // 2: Card_content
+
+                // i: Card_header (Name and rating)
+
+                // ii: Card_footer (Food_type and price)
+
+                // iii: Card_location (Restaurant location, distance)
+
+        
+        // Create a card
+
+        const card = document.createElement('div');
+
+        card.classList.add('card');                             // Giving class name to div (can add multiple classes to it using this)
+
+        // Create image
+
+        const image = document.createElement('img');
+
+        image.src = `Images/${restaurant.image}.jpg`;
+
+        // card-content
+
+        const Card_content = document.createElement('div');
+
+        Card_content.classList.add('card-content');
+
+        // Card header
+
+        const Card_header = document.createElement('div');
+
+        Card_header.classList.add('card-header');
+
+        const h3 = document.createElement('h3');
+
+        h3.textContent = restaurant.name;
+
+        const rate = document.createElement('span');
+
+        rate.textContent = "Rating: " + restaurant.rating;
+
+        rate.classList.add('rating');
+
+        Card_header.appendChild(h3);
+
+        Card_header.appendChild(rate);
+
+
+
+        // Card footer
+
+        const Card_footer = document.createElement('div');
+
+        Card_footer.classList.add('card-footer');
+
+        const food = document.createElement('span');
+
+        food.textContent = restaurant.food_type;
+
+        const price = document.createElement('span');
+
+        price.textContent = "₹" + restaurant.price_for_two;
+
+        Card_footer.appendChild(food);
+
+        Card_footer.appendChild(price);
+
+
+
+        // Card location
+
+        const Card_location = document.createElement('div');
+
+        Card_location.classList.add('card-location');
+
+        const location = document.createElement('span');
+
+        location.textContent = restaurant.location;
+
+        const distance = document.createElement('span');
+
+        distance.textContent = restaurant.Distance_from_Customer_house + "km";
+
+        Card_location.appendChild(location);
+
+        Card_location.appendChild(distance);
+
+
+        Card_content.appendChild(Card_header);
+
+        Card_content.appendChild(Card_footer);
+
+        Card_content.appendChild(Card_location);
+
+        card.appendChild(image);
+
+        card.appendChild(Card_content);
+
+
+
+
+        root.appendChild(card);
+
+        
+    })
+
+}
+
+getrestaurant(restaurants);
+
+document.getElementById('Alcohol').addEventListener('click', ()=>{
+
+    const result = restaurants.filter((obj)=>obj.alcohol);                                  // selects all restaurants in which alcohol == true
+
+    // document.getElementById('root').innerHTML = "";                             // Due to this removed all it's children so now we can show only those who serves alcohol as before it just just adding those elements to the bottom as the 100 cards were already there
+
+    // Best practice is by using this (does the same work only)
+
+    document.getElementById('root').replaceChildren();
+    
+    getrestaurant(result);
+    
+});
+
+document.getElementById('Rating').addEventListener('click', ()=>{
+
+    const result = restaurants.filter((obj)=>obj.rating >= 4);                                
+
+    document.getElementById('root').replaceChildren();
+
+    getrestaurant(result);
+    
+});
+
+document.getElementById('Open').addEventListener('click', ()=>{
+
+    const curr_time = 14;
+
+    const result = restaurants.filter((obj)=>obj.Restaurant_open_time < curr_time < obj.Restaurant_close_time);                                
+
+    document.getElementById('root').replaceChildren();
+
+    getrestaurant(result);
+    
+});
+
+
+document.getElementById('Filters').addEventListener('click', ()=>{
+
+  document.getElementById('filterPopup').classList.remove("hidden");
+
+});
+
+document.getElementById('applyFilter').addEventListener('click', ()=>{
+
+  const element = document.querySelector('input[name=filterOption]:checked');           // Will only select the one which will have checked in the radio button (name=filterOption to check only for those whose name is filterOption)
+
+  // Selected based on attribute in above
+
+  const answer = element.value;
+
+  if(answer === "rating")
+  {
+    restaurants.sort((a,b)=>b.rating - a.rating);
+  }
+  else if(answer === "highLow")
+  {
+    restaurants.sort((a,b)=>b.price_for_two - a.price_for_two);
+  }
+  else if(answer === "costLowHigh")
+  {
+    restaurants.sort((a,b)=>a.price_for_two - b.price_for_two);
+  }
+  else if(answer === "distance")
+  {
+    restaurants.sort((a,b)=> a.Distance_from_Customer_house - b.Distance_from_Customer_house);
+  }
+
+  document.getElementById('root').replaceChildren();
+
+  document.getElementById('filterPopup').classList.add("hidden");
+
+  getrestaurant(restaurants);
+
+
+});
+
+document.getElementById('closeFilter').addEventListener('click', ()=>{
+
+  document.getElementById('filterPopup').classList.add("hidden");
+
+});

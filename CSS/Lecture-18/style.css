@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+}
+
+.container{
+
+    padding: 4rem;
+    background-color: black;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+}
+
+
+.Box{
+    height: 150px;
+    width: 150px;
+    background-color: orange;
+    font-size: 4rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    animation-name: movement;
+
+    animation-duration: 3s;
+
+    position: relative;
+
+    animation-timing-function: linear;
+
+    animation-delay: 1s;
+
+    animation-iteration-count: 2;
+
+    /* Used for how many times we want to execute animation */
+
+    /* animation-direction: alternate-reverse; */
+
+    /* Used for direction */
+
+    /* animation-fill-mode: backwards; */
+
+    /* Kind of like use it to help stay it in final position */
+
+    /* The animation-fill-mode property controls how an element looks before and after an animation runs */
+
+    border-radius: 50%;
+
+    /* Animation shorrthand technique */
+
+    animation: 3s ease-in 1s 2 reverse both paused movement;
+
+    /* <duration> <timing function> <delay> <iteration count> <direction> <fill mode> <play state> <name> */
+}
+
+/* Used animation here first named animation the duration for animation */
+
+/* Then we use @keyframes animation_name  */
+
+
+/* 
+
+@keyframes movement{
+    from{
+        top: 0px;
+        left: 1000px; 
+        transform: translate(0vw);
+
+    }
+
+    to{
+        top: 0px;
+        left: 0px; 
+        transform: translate(80vw,50vh);
+    }
+} 
+
+
+*/
+
+/* from is the starting position and to is ending position  */
+
+
+
+/* Can also determine different for each position in animation can use any percentage */
+
+@keyframes movement{
+    0%{
+        transform: translate(0vw,0vh);
+
+    }
+
+    25%{
+        transform: translate(30vw,-30vh);
+
+    }
+
+    50%{
+        transform: translate(60vw,-30vh);
+
+    }
+
+    75%{
+        transform: translate(30vw,30vh);
+
+    }
+
+    100%{
+
+        transform: translate(0vw,0vh);
+
+    }
+
+}
+
+

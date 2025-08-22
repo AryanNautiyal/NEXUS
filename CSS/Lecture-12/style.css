@@ -1,0 +1,94 @@
+.container{
+    display: flex;
+    background-color: aqua;
+
+    height: 1000px;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.box{
+    height: 150px;
+    width: 150px;
+    border: 2px black solid;
+}
+
+.box{
+    height: 150px;
+    width: 150px;
+    border: 5px black solid;
+    margin: 5px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.box1{
+    background-color: red;
+
+    /* flex-grow: 1; */
+
+    /* flex-basis: 200px; */
+
+    /* Overshadows the width (In this case overshadows the width from 150px to 200px */
+
+    /* align-self: flex-start; */
+
+    /* Align this box at the top (as align = cross axis so we used row flex direction) so it appears at the top */
+
+    /* align-self: center; */
+
+    /* align-self: flex-end; */
+}
+
+.box2{
+    background-color: blue;
+
+    /* flex-grow: 1; */
+
+    /* Covers all the remaining space in the container */
+
+    /* By default flex grow is 0 */
+}
+
+.box3{
+    background-color: green;
+    /* order: -1; */
+
+    /* By default everyone has order 0 if we enter negative it comes first and if we enter positive it come at last */
+
+    /* Ordering defines the order of the element */
+
+    /* flex-grow: 1; */
+
+    /* flex-shrink: 2; */
+
+    /* By default flex shrink is 1, it determines by how much speed an element shrinks with respect to other is viewport is minimized */
+
+    /* Shrinks 2 times faster than others when viewport is minimized */
+
+    /* Can calculate by [( shink * space of box ) / total space (calculated by multiplying each box with their pixel * shrink then added) ] * shinked space = pixel shrinked */
+
+    /* Then total pixel before - pixel shrinked = pixel left */
+}
+
+.box4{
+    background-color: orange;
+
+    /* flex-grow: 2; */
+
+    /* Flex grow 2 means it takes more space remaining space or can say 2X space other than others with flex grow 1 */
+
+    flex: 2 2 200px ;
+
+    /* Shortcut or flex-grow flex-shrink flex-basis */
+
+}
+
+
+/* Flex grow for each box add all boxes flex grow then divide total number of space in pixel left  by this it will give for each how much each normally gets 
+    if say someone got 2x for something that space X 2 will be alloted to that box
+*/
+
+
+/* Flex grow generally the one with higher number takes more remaining space */

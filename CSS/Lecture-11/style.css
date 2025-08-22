@@ -1,0 +1,151 @@
+.container{
+    background-color: aquamarine;
+    height: 1000px;
+    display: flex;
+    /* flex-direction: row; */
+
+    /* By default it's row (main axis = horizontal axis and cross axis = vertical axis) */
+
+    /* flex-direction: column; */
+    
+    /* Can make it column wise (main axis = vertical axis and cross axis = horizontal axis) */
+
+    /* flex-direction: row-reverse; */
+
+    /* Arranged in reverse direction row wise */
+
+    /* flex-direction: column-reverse; */
+
+    /* Arranged in reverse direction column wise */
+
+    /* justify-content: start; */
+
+    /* Starts or aligns all elements at start (by defaukt)  */
+
+    /* justify-content: end; */
+
+    /* Starts or aligns all elements at end */
+
+    /* justify-content: center; */
+
+    /* Starts or aligns all elements at center */
+
+    /* justify-content: space-around; */
+
+    /* 
+        Makes the objects equally spaced from each side (like the portion that was left just equally spacing them all
+        distributes space evenly around all flex items along the main axis, with equal spacing before, between, and after them.
+    */
+
+    /* justify-content: space-between; */
+
+    /* Gives equal spacing between all the elements (1st and last elements are sticked to the ends so no gap is there)  */
+
+    /* justify-content: space-evenly; */
+
+    /* All spaces before after between boxes all are same */
+
+    /* align-items: end; */  /* Works only around cross axis */
+
+    /* Aligns time at the end with respect to cross axis */
+
+    /* align-items: center; */ /* Aligns item at the center of the cross axis */
+
+    /* Centers element (see the body size too if body size big then will center according to that {unless it's inside another container} ) */
+
+    /* align-items: start; */
+
+    /* align-items: end; */
+
+    /* Start and end works same just along cross axis */
+
+    /* align-items: stretch; */ /* By default align items is stretched if height is given then according to height they are done */
+
+    /* Stretch the elements across cross axis (give no height then see) */
+
+    /* align-items: baseline; */
+
+    /* Due to this all elements are aligned at the same line */
+
+    flex-wrap: wrap;
+
+    /* When we minimize viewport it wraps the elements so that element goes to next line instead of minimizing (by default it's no wrap) */
+
+    /* align-content: center; */
+
+    /* align-content: end;  All boxes are at the end */
+
+    /* align-content: start;  All boxes aligned at the start */
+
+    /* align-content: space-around; */
+
+    /* align-content: space-between; */
+
+    /* align-content: space-evenly; */
+
+    /* How can we handle spacing between contents in a container as if they are many boxes and we wrapped it to come in next line so it aligns the content  */
+
+    /* Space around content is given evenly */
+
+    justify-content: space-evenly;
+
+
+}
+
+
+/* Shortcut to remember align = cross axis */
+
+
+.box{
+    height: 150px;
+    width: 150px;
+    border: 5px black solid;
+    margin: 5px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.box1{
+    background-color: red;
+}
+
+.box2{
+    background-color: blue;
+}
+
+.box3{
+    background-color: green;
+}
+
+.box4{
+    background-color: orange;
+}
+
+
+/* Due to below command the items are not in same line */
+
+.first{
+    font-size: 50px;
+}
+
+.second{
+    font-size: 25px;
+}
+
+/* 
+
+            align-items (Per-Row Alignment)
+            Aligns items within their row (even if there's only one row).
+
+            Use cases: Center, stretch, or position items in a single line.
+
+        align-content (Multi-Line Group Alignment)
+        Distributes space between multiple rows (like justify-content but vertically).
+
+        Only works if:
+
+        flex-wrap: wrap is set, and
+
+        Content spans multiple lines.
+
+*/

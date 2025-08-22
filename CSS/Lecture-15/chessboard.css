@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+.container{
+    display: grid;
+
+    width: 50vw;
+    height: 50vw;
+
+    /* Used both as vw to get exact square boxes as aspect ratio difference */
+
+    /*
+         If we use both vh then if we decrease width (as device width decreases in mobile etc) so it doesn't reduce it's size then after reducing
+        width to a limit it then reduces the height 
+        
+    */
+
+    /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; */
+
+    /* Tirersome work so to do it in short */
+
+    grid-template-columns: repeat(8,1fr);
+
+    /* Repeated 1fr 8 times (times,size) */
+
+    /* grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; */
+
+    grid-template-rows: repeat(8,1fr);
+
+    /* Without template rows also ok */
+}
+
+.box{
+    background-color: white;
+}
+
+.box1{
+    background-color: black;
+
+
+}

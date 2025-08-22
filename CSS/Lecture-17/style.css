@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+}
+
+
+.container{
+    background-color: wheat;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Box{
+    height: 200px;
+    width: 200px;
+    background-color: orange;
+    font-size: 4rem;
+    border: 5px black solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition-property: all;
+    transition-duration: 3s;
+    transition-timing-function: linear;
+}
+
+.Box:hover{
+    /* transform: translate(400px,300px); */
+
+    /* 400px for horizontal axis and 300px for vertical axis */
+
+    /* translate helps to move the box by given pixels */
+
+    /* Psotive values entered so will go in horizontal axis towards positive side and will go towards negative in Y-axis */
+
+    /* If we enter negative values then opposite of positive happens */
+
+    /* transform: scale(2); */
+
+    /* transform: scale(2,3); */
+
+    /* Size is doubled around X-axis and tripled around Y-axis */
+
+    /* transform: rotate(180deg); */
+
+    /* Rotates if positive clockwise rotate, if negative value then anticlockwise rotation */
+
+    /* transform: skew(180deg); */
+
+    /* Tilts the box if positive then anticlockwise tilt and if negative then clockwise tilt */
+
+    /* transform: translate(200px,300px) scale(2) rotate(50deg); */
+
+    /* Shorthand notation  */
+
+    /* transform: rotate(45deg); */
+
+    /* transform-origin: bottom right; */
+
+    /* bottom right end is fixed and then it moves or rotates 45 degree */
+
+    color: aqua;
+
+}

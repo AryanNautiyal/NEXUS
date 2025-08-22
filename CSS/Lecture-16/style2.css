@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+}
+
+.container{
+
+    height: 100%;
+    background-color: black;
+    padding: 4rem;
+    display: grid;
+    /* grid-template-columns: repeat(4,1fr); */
+
+    /* grid-template-columns: repeat(4,minmax(100px, 1000px)); */
+
+    /* It is used to specify that each block will be min 100px and max 1000px based on vw  and 4 is number of columns */
+
+    /* Not as responsive as media query */
+
+    grid-template-columns: repeat(auto-fill, minmax(100px,260px));
+
+    /* Better than media query with this it tells how many columns will be there or automatically changes number of columns */
+
+    /* Can also use */
+
+    /* grid-template-columns: repeat(auto-fit, minmax(100px,260px)); */
+
+    /* In both fit and fill ignores min limit but follows max limit, when we minimize the vw to max then it follows min limit */
+
+    /* In both if there's not enough space it automatically sends them to next line */
+
+    /* auto fill if we minimize the screen it adds more rows to fill the content but in auto fit if there is no content then it removes that and then behaves as auto fill */
+
+    justify-content: center;
+
+    /* Used this as when we are minimizing we want content to be centered so used this */
+
+    /* justify content moves the whole container in this case whereas the justify items moves the item inside the container */
+    
+    gap: 1rem;
+
+    /* justify-items: center; */
+
+    /* All content is in center (main axis) */
+
+    /* align-items: center; */
+
+    /* All content is in center (cross axis) */
+
+    /* place-items: center; */
+
+    /* Shorthand notation to center content */
+
+    /* place-items: end; */
+
+    /* Brings them to bottom right end of the grid row column  */
+
+    place-items: center end;
+
+    /* 1st parameter: align items and 2nd parameter: justify content */
+}
+
+.box{
+    background-color: yellowgreen;
+    font-size: 4rem;
+    color: black;
+}
+
+
+/* To move one specific one */
+
+/* 
+.Box2{
+    justify-self: start;
+
+    align-self: center;
+} 
+*/
+
+
+
+/* 
+
+    In short
+
+        -- justify content moves the whole container box
+
+        -- justify items moves the boxes inside the container or content inside the container and moves them
+
+        -- align just same with cross axis
+
+        -- justify self to change for an individual
+
+*/

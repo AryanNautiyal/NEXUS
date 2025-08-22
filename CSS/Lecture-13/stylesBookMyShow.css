@@ -1,0 +1,222 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.logo{
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: baseline;
+
+    /* Added this extra by me to make logo and button come in same line */
+
+    /* Items align such that their text baselines are vertically matched  */
+
+    background-color: rgb(214, 69, 69);
+    padding: 2rem;
+
+}
+
+.left{
+    color: white;
+}
+
+.right button{
+
+    font-size: 1.5rem;
+
+    margin: 0.5rem;
+
+    color: white;
+
+    border: none;
+
+    background-color: rgb(214, 69, 69);
+
+    padding-top: 0.3rem;
+
+    cursor: pointer;
+
+    height: 3rem;
+
+}
+
+
+.search{
+    padding: 2rem 0rem;
+
+    display: flex;
+
+    justify-content: center;
+
+    background-color: lightgray;
+}
+
+.searching{
+    width: 400px;
+    max-width: 60%;
+
+    /* Which one will be smaller in case of width and max width that will be applied (max width is 60% of container size or can say parent size) */
+
+    font-size: 1rem;
+
+    padding: 0.5rem;
+
+    border-radius: 0.5rem;
+
+    border: none;
+}
+
+
+.search > button{
+
+    font-size: 2rem;
+    margin-left: 0.5rem;
+
+    background-color: rgb(214, 69, 69);
+
+    color: white;
+    padding: 0.5rem;
+    border: 5px;
+
+    border-radius: 10px;
+
+    cursor: pointer;
+}
+
+
+.hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    background-image: url(https://www.enzeefx.com/wp-content/uploads/2020/05/Image2-2.jpg);
+
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.hero > h2{
+    color: white;
+
+    font-size: 2rem;
+
+    background-color: black;
+}
+
+.hero > button{
+
+    background-color: rgb(214, 69, 69);
+
+    color: white;
+
+    font-size: 2rem;
+
+    margin-top: 1rem;
+
+    cursor: pointer;
+
+    padding: 0.5rem;
+
+    border-radius: 10px;
+
+
+
+}
+
+.mover{
+    text-align: center;
+
+    padding: 1rem;
+}
+
+.mover > h2 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+
+.card{
+    border: 0.5rem rgb(208, 199, 199) solid;
+
+    background-color: rgb(208, 199, 199);
+
+    text-align: center;
+
+    margin-left: 1rem;
+
+    margin-right: 1rem;
+
+    border-radius: 10px;
+}
+
+.movie{
+    display: flex;
+
+    /* justify-content: center; */
+
+    /* Didn't use it here instead used text-align center */
+
+    overflow-x: scroll;
+}
+
+.images{
+    height: 400px;
+
+    border-radius: 10px;
+
+}
+
+.card > h3{
+    font-size: 1.5rem
+}
+
+.bot{
+    margin-top: 2rem;
+
+    text-align: center;
+}
+
+.bot > img{
+    max-width: 80%;
+
+    border-radius: 10px;
+}
+
+
+
+@media (max-width: 500px)
+{
+    .logo{
+        flex-direction: column;
+
+        align-items: center;
+    }
+
+    .right{
+        display: flex;
+        flex-direction: column;
+        padding-top: 1rem;
+    }
+
+    .movie {
+        flex-direction: column;
+        
+    }
+
+    .card{
+        margin: 0.5rem;
+    }
+
+    .images, .card, .card > h3{
+
+        max-width: 80%;
+
+    }
+
+    
+}

@@ -1,0 +1,79 @@
+
+<!-- How to interlink pages in HTML like if we click on one anchor tag it should lead to a portion of same page rather than a different page -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <!-- Much more feasible as used class name to apply CSS to same class members -->
+    <style>
+        .third {
+            background-color: aqua;
+        }
+
+        /* Useful to implement specific CSS to an element */
+
+        #second {
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- Not feasible method as we have to write same code again and again for each tag those who are having same class
+    
+    <h1 id="first"> Hello Coder Army</h1>
+
+    <p class="third" style="background-color: aqua;">Hello bnaadiya</p>
+    <h2 id="second">Kaise ho Sab</h2>
+
+    <p class="third" style="background-color: aqua;"> Hum sab badiya hai</p>
+    <h3 class="fourth">Money</h3>
+    <ul class="third" style="background-color: aqua;">
+        <li>Rohit</li>
+        <li>Mohit</li>
+        <li>Rohan</li>
+        <li>Sohan</li>
+    </ul> 
+    
+    -->
+
+    <h1 id="first"> Hello Coder Army</h1>
+
+    <p class="third">Hello bnaadiya</p>
+    <h2 id="second">Kaise ho Sab</h2>
+
+    <p class="third"> Hum sab badiya hai</p>
+    <h3 class="fourth">Money</h3>
+    <ul class="third">
+        <li>Rohit</li>
+        <li>Mohit</li>
+        <li>Rohan</li>
+        <li>Sohan</li>
+    </ul> 
+
+</body>
+</html>
+
+
+
+<!-- 
+
+    Class
+
+        --- We can give same class name to multiple elements and then we can use that class to style all those elements at once
+
+        --- We can use class to style multiple elements at once
+
+    Id
+
+        --- We can give same id to only one element and then we can use that id to style that element
+
+        --- We can use id to style only one element at once
+
+        --- Should be unique in the page
+    
+-->

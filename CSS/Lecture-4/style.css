@@ -1,0 +1,68 @@
+h1{
+    background-color: aqua;
+    width: 300px;
+    height: 300px;
+    /* border-width: 5px;
+    border-style: solid;
+    border-color: blue; */
+    border-radius: 5px;
+
+    /* Shortcuts for above border width, style & colour <-- Shorthand notations*/
+
+    border: 5px brown solid;
+
+    /* padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-bottom: 10px; */
+
+    /* padding: 10px 20px; */
+
+    /* padding: 10px 20px 30px; */
+
+    /* padding: 10px 20px 30px 40px; */
+
+    /* margin: 50px; */
+
+    /* margin left right bottom top can do that */
+
+    margin: 10px 20px 30px 40px;
+
+}
+
+h2{
+    background-color: plum;
+    border-left-width: 10px;
+    /* border-style: solid;
+    border-color: greenyellow; */
+    border-left-color: blue;
+    border-left-style: solid;
+}
+
+ul{
+    background-color: pink;
+
+    /* border-width: 10px 20px;  */
+    /* When we have 2 values for border-width then first value will be allocated to 
+    top and bottom and the second value will be allocated for left and right */
+    
+    /* border-width: 10px 20px 30px;   */
+    
+    /* First - top , second - left & right , last - bottom */ 
+
+    /* border-width: 10px 20px 30px 50px;    */
+
+    /* Top - 10px , right - 20px , bottom - 30px , left - 50px */
+
+    /* Goes in clockwise direction (top-right-bottom-left) */
+
+    border-style: solid;
+}
+
+p{
+    border-width: 5px;
+    border-color: black;
+    border-style: solid;
+    background-color: tomato;
+    padding: 10px;
+}

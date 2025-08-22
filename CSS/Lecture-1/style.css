@@ -1,0 +1,42 @@
+
+/* element selector */
+
+h1{
+    color: aquamarine;
+    background-color: black;
+}
+
+ul {
+    background-color: brown;
+    color: blue;
+}
+
+/* Class selector */
+
+/* Selected by class */
+/* You need to apply dot(.) first */
+
+
+.first{
+    color: aquamarine;
+    background-color: blue;
+}
+
+.second{
+    color: aqua;
+    background-color: black;
+}
+
+
+/* ID selector */
+
+/* Selected by id (unique) */
+
+/* Use # then will use id */
+
+#third{
+    color: blueviolet;
+    background-color: red;
+}
+
+

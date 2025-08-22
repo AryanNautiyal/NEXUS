@@ -1,0 +1,31 @@
+
+
+<!-- 
+ 
+    Why we cannot access image in our system using absolute path ?
+ 
+    Because the browser does not have access to your local file system for security reasons
+
+    Because we kind of give access to server to access our hard drive so due to that it can access our personal data and can copy data in servers or can read it due to this absolute path is not allowed
+
+    It can only access files that are served over HTTP or HTTPS protocols
+    
+    To display an image, it needs to be hosted on a web server or accessible via a URL
+
+    If you want to display an image from your local system, you can use a relative path or host the image on a web server and use the URL to access it.
+
+-->
+
+
+<!-- 
+
+    So in VSCode case the server is in our system but we have opened our NEXUS folder in the server so outside NEXUS folder due to security issues its not allowed to access data 
+    
+-->
+
+
+
+<!-- (server sends HTML files (CSS and JS files are also sent but learning HTML here so only HTML considering) when client requests so HTML files might contain code to try to access data so its not allowed <img src="/Users"> <-- not allowed) -->
+
+<!-- Server can only access NEXUS file only in this case so no matter whether the seerver is in our system or external it treats all HTML files as same and won't allow them to access data -->
+

@@ -1,0 +1,62 @@
+<!-- 
+
+    Types of CSS:
+
+        -- Inline CSS
+
+                eg: <h1 style="background-color : blue;">Hello</h1>
+
+        -- Internal CSS
+
+                eg: Using style tag in head of the html page
+
+        -- External CSS
+
+                eg: Creating a separate CSS file then linking it to HTML file
+
+-->
+
+
+
+<!-- Internal CSS -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Internal CSS -->
+    <style>
+        /* selected by element */
+        /* It is called selector --> (h1) */
+        h1{
+            color: aqua;
+            background-color: green;
+        }
+
+        h2{
+            color: blue;
+            background-color: bisque;
+        }
+
+        ul{
+            background-color: antiquewhite;
+        }
+    </style>
+</head>
+<body>
+    <h1>Coder Army</h1>
+    <h2>Diet Plan</h2>
+    <ul>
+        <li>Milk</li>
+        <li>Whey</li>
+        <li>Chicken</li>
+        <li>Egg</li>
+    </ul>
+
+    <h2>Money Fame</h2>
+    <!-- As we used h2 selector so whichever elements has the same selector it will have CSS applied to it defined using their selector (h2) -->
+</body>
+</html>

@@ -1,0 +1,76 @@
+
+/* Used to change background colour of whole page
+ body{ 
+    background-color: aqua;
+}
+
+*/
+
+/* Universal selector : used to apply CSS to eveything in body including body 
+
+*{
+    background-color: red;
+}
+
+*/
+
+/* Can apply CSS to group by this class or this one other method */
+/* 
+
+h1{
+    background-color: aqua;
+}
+
+h2{
+    background-color: aqua;
+}
+
+p{
+    background-color: aqua;
+} 
+
+*/
+
+/* Group Selector */
+
+/* h1,h2,p{
+    background-color: aqua;
+} */
+
+/* Can add comma (,) also then #id */
+
+
+/* Select by attribute */
+
+
+/* Changed colour of that h2 tag that had attribute draggable = "true" */
+
+/* h2[draggable="true"] {
+    background-color: aqua;
+} */
+
+
+/* Select by descendent */
+ 
+/* Wanted to change p tag bg colour so did by section who was it's grandparent */
+/* section p{
+    background-color: aqua;
+} */
+
+
+
+/* Select by child */
+
+
+/* Will apply CSS to child only no grandchild and all only child */
+section > p{
+    background-color: aqua;
+}
+
+
+/* ID selector with class selector */
+
+#header.dark-theme { 
+  background: black;
+  color: white;
+}

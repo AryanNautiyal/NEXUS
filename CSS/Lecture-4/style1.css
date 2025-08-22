@@ -1,0 +1,26 @@
+h1{
+    width: 200px;
+    height: 200px;
+
+    /* width height for content box height and width */
+
+    padding: 10px;
+    border: 5px black solid;
+
+    box-sizing: border-box; /* Used in responsive websites */
+
+    /* By default it's value is content-box in which the width and height we mention is for content box only */
+
+    /* But making it border-box results in total box width and height be 200X200px as mentioned above */
+
+    /* So padding + border + content = heigth (if taking their heights too or top and bottom values)
+        padding + border + content = width   (if taking their widths or left & right values) */
+
+
+    /* Margin is not included as it doesn't affect */
+
+    margin: 20px; /* No effect on box as margin has no effect on content */
+
+    
+
+}

@@ -1,0 +1,59 @@
+
+<!-- How to attach media files (audio, video, image, etc) to our website -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- Audio file attach kaise kar sakte hai -->
+     <audio src="./eminem-the-real-king-of-rap_eminem-mockingbird.mp3" controls></audio>
+
+
+     <!-- Advantages of this method : In case if our source audio doesn't load them we can just use alternate source audio to be played -->
+     <audio controls>
+        <source src="./eminem-the-real-king-of-rap_eminem-mockingbird.mp3">
+        <source src="./eminem-the-real-king-of-rap_eminem-mockingbird.mp3">
+        Songs are not loaded
+     </audio>
+
+    <!-- Video file ko kaise attach kare -->
+     <video src="12227924_1920_1080_25fps.mp4" height="400" width="700" controls></video>
+     
+
+     <!-- autoplay helps to automatically play the video when the website is  loaded & muted plays the video while muted (as browser will allow you to autoplay video but with muted only otherwise it won't allow video to play) -->
+     
+     <video height="300" width="400" controls autoplay muted>
+        <source src="./12227924_1920_1080_25fps.mp4" type="video/mp4">
+        <source src="./12227924_1920_1080_25fps.mp4" type="video/mp4">
+        Video is not played due to error
+     </video>
+
+    <!-- Youtube video ko kaise attach kare -->
+
+    <!-- We will do this using iframe -->
+
+    <iframe src="https://www.youtube.com/embed/_AuKZ3WdcU4" frameborder="0" allowfullscreen></iframe> <!-- allowfullscreen allows the vids to be full screen-->
+
+    <!-- In this https://www.youtube.com/watch?v=_AuKZ3WdcU4 
+     
+            _AuKZ3WdcU4 <-- is the yt video id
+
+            so we only need id and https://www.youtube.com/ (yt link) only so we will remove the other part and instead of it we will put embed/
+    
+    -->
+
+    <br><br>
+
+    <iframe src="../../HTML/Lecture-8/index.html" frameborder="10" height="500"></iframe>
+
+    <!-- frameborder just used for border aroound the content -->
+    
+</body>
+</html>
+
+

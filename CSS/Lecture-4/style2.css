@@ -1,0 +1,44 @@
+.card{
+
+    width: 30vw;
+    height: 10vw;
+    background-color: aqua;
+    border: 5px green solid;
+    padding: 10px;
+    margin: 20px 20px 20px 35vw;  /* Did 35vw in left as we needed to bring them in center so as it's width is 30vw */
+
+    /* So 100-30 = 70 and half of 70 is 35 so this brought them in middle */
+}
+
+body{
+    background-color: bisque;
+}
+
+h2{
+    color: green;
+    text-align: center;
+}
+
+h3{
+    text-align: center;
+}
+
+p{
+    text-align: center;
+}
+
+
+/* So when we hover our mouse above it this CSS is applied to it */
+/* 
+
+.card:hover h3{
+    color: chocolate;
+    
+    Descendent used here to apply CSS to h3 only in .card 
+} 
+    */
+
+.card:hover {
+    background-color: pink;
+    transform: scale(1.1);
+}

@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+}
+
+.first, .third{
+    display: inline-block;
+    background-color: red;
+    width: 25vw;
+    height: 40vh;
+
+}
+
+
+.second, .fourth{
+    display: inline-block;
+    background-color: red;
+    width: 60vw;
+    height: 40vh;
+    /* margin-left: 14vw; */
+    margin-left: 15vw;
+}
+
+.third, .fourth{
+    margin-top: 20vh;
+}
+
+/* Still a space is coming in the right side so this is 
+
+    Because the 2 div are in different lines so space between them is being printed 
+    So can either make them in same line and change margin-left in second fourth to 15vw
+    Then it will not come in another line and will give desired Denmark Flag
+*/
+
+

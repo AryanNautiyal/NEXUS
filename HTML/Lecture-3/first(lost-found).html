@@ -1,0 +1,70 @@
+
+<!-- Maximum supported image format is .png and .jpg so use that mostly -->
+
+<!--
+
+<img src="imageimgimg.png">
+
+-->
+
+
+<!-- 
+
+    Absolute path of an image
+
+        -- Absolute path is the complete URL of the image
+
+        -- It is not recommended to use absolute path as it will not work if the image is removed from the server
+
+        -- It is used when the image is hosted on a different server
+
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Ajey_Nagar_2022.jpg/250px-Ajey_Nagar_2022.jpg">
+
+    Relative path of an image
+
+        -- Relative path is the path of the image relative to the HTML file
+
+        -- It is recommended to use relative path as it will work even if the image is moved to a different server
+
+        -- It is used when the image is hosted on the same server as the HTML file
+
+        <img src="./imageimgimg.png">    {./ means current directory so it will look for imageimgimg.png in the same directory as the HTML file}
+
+        if image in other folder then use ../ to go one level up
+
+         eg : <img src = "../Lecture-2/imageimgimg.png"> {will go to HTML folder level (outside lecture-3 folder) and then look for imageimgimg.png in Lecture-2 folder}
+
+-->
+
+
+<!-- Relative path example -->
+
+
+<!--
+
+<img src="./imageimgimg.png"> Relative path example
+
+-->
+
+<!-- Relative path example with going one level up -->
+
+<!--
+
+<img src="../Lecture-2/picForLecture3First.htmlFile.jpg"> 
+
+-->
+
+
+
+<!-- To go one more level up than HTML folder to NEXUS then use ../.. -->
+
+<!-- 
+
+<img src="../..NEXUS/Lecture-2/picForLecture3First.htmlFile.jpg">  
+
+-->
+
+
+<!-- Absolute path -->
+
+<img src="/Users/aryan/Desktop/NEXUS/HTML/Lecture-3/imageimgimg.png">

@@ -1,0 +1,49 @@
+.container{
+    background-color: blue;
+    display: flex;
+}
+
+/* Desktop First approach we used here before */
+
+.box{
+    height: 300px;
+    width: 300px;
+    background-color: aqua;
+    color: red;
+    margin: 30px;
+}
+
+
+
+
+
+/* @media (max-width: 500px){
+    .container{
+        background-color: aqua;
+        height: 200px;
+        width: 200px;
+    }
+} */
+
+/* With media then focused for device speicific */
+
+
+@media (max-width: 600px)
+{
+    .container{
+        flex-direction: column;
+    }
+}
+
+
+@media (max-width: 900px) and (min-width: 601px)
+{
+    .container{
+        flex-wrap: wrap;
+    }
+}
+
+
+/* Orientation can also give here {potrait and landscape} */
+
+/* Can also do mobile approach like writing general CSS for mobile then with media going device specific for other devices */

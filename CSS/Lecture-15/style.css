@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+}
+
+.container{
+
+    padding: 5rem;
+
+    height: 100%;
+    width: 100%;
+    background-color: rgb(136, 122, 122);
+
+    display: grid;
+
+    /* Height distribution is uniform the moment grid is applied */
+
+    /* grid-template-columns: 200px 200px 200px; */
+
+    /* Helps to create columns (made 3 columns of 200px as wrote 200px 3 times) */
+
+    /* Can give different sizes */
+
+    /* grid-template-rows: 200px 200px; */
+
+    /* Helps to create rows (made 2 rows of 200px each as wrote 200px 2 times) */
+
+    /* grid-template-columns: 1fr 1fr 1fr; */
+
+    /* grid-template-rows: 1fr 1fr; */
+
+    /* fr = Fraction : divides the screen equally between 1fr if one is made in pixel then rest 2 in fr will take even space or equal space */
+
+    /* grid-template-columns: 1fr 2fr 1fr; */
+
+    /* gap: 1rem; */
+
+    /* Used to give gap uniformly (row-wise also and column-wise also) */
+
+    /* row-gap: 1rem; */
+
+    /* column-gap: 2rem; */
+
+    /* Used single single if not want to apply same gap in rows and columns */
+
+    grid-template-columns: 1fr 1fr 1fr;
+
+    /* Mostly used this without rows as rows are automatically adjusted  */
+
+    gap: 1rem;
+
+
+
+
+
+
+
+
+}
+
+.Box{
+    background-color: orange;
+    border: 0.5rem black solid;
+
+    font-size: 2rem;
+}
+
+
+.header, .footer{
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+/* Inspect click on grid then see numbers then use this start and end to make them cover whole */
+
+/* As in this we wanted our header to occupy whole first row so did 1 to 4 */
+
+/* If we have more number of boxes than in layout then the extra boxes are gone outside the layout and they are compressed */
+
+
+
+.sidebar{
+    grid-row-start: 2;
+    grid-row-end: 4;
+
+
+    /* Shorthand notation for above */
+
+    /* grid-row: 2/4; */
+}
+
+
+.content1{
+    grid-column: 2/4;
+}
