@@ -1,0 +1,14 @@
+{
+  "name": "lecture-14",
+  "version": "1.0.0",
+  "description": "*** MongoDB is a DBMS and it helps us in handling our Database or talk to our DB ***",
+  "main": "database.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mongodb": "^6.20.0"
+  }
+}

@@ -1,0 +1,36 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+#root{
+    background-color: black;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.first{
+
+    background-color: white;
+
+    height: 200px;
+
+    width: 400px;
+
+    text-align: center;
+}
+
+button{
+    height: 80px;
+
+    font-size: 20px;
+
+    background-color: orange;
+
+    margin-right: 10px;
+
+}

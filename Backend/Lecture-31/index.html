@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>CHAT APP</h1>
+
+    <input type="text" placeholder="Enter room Number" id="roomNumber" style="width: 40vw; height: 1.5vw; font-size: larger; margin-bottom: 20px;">
+
+    <button onclick="joinRoom()" style="width: 20vw; height: 1.5vw; margin-left: 10px; background-color: burlywood;">Join</button>
+
+    <div id="messageDisplay" style="height: 50vh; width: 50vw; background-color: cornflowerblue; margin-bottom: 20px;"></div>
+
+    <input type="text" placeholder="type your message here" id="message" style="height: 10vh; width: 40vw; font-size: larger;">
+
+    <button onclick="sendMessage()" style="margin-left: 20px; height: 5vh; width: 20vw; background-color:chocolate;">Send</button>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <!-- This script gives access of socket to this automatically -->
+    <script>
+    const socket = io();
+
+    // console.log(socket);
+    
+    // console.log(socket.id);
+
+    // Returns undefined as to make socket connection some time will be taken 
+
+    // So by default it's getting undefined as socket connection is not made yet
+
+    // socket.on("connect",()=>{
+    //     console.log(socket.id);
+    // })
+
+    const messageBox = document.getElementById('messageDisplay');
+
+    const messageInput = document.getElementById('message');
+
+    const roomNumber = document.getElementById('roomNumber');
+
+    let roomId = null;
+
+    // function sendMessage(){
+
+    //     const msg = messageInput.value;
+
+    //     socket.emit('message', msg);        // Will compare with backend first as to which one contains the message then will execute command inside it
+
+
+    //     const element = document.createElement('div');
+
+    //     element.textContent = msg;
+
+    //     element.style.textAlign = "right";
+
+    //     messageBox.appendChild(element);
+
+    //     messageInput.value = '';
+    // }
+
+
+    // Updated according to room number
+
+    function sendMessage(){
+
+        const msg = messageInput.value;
+
+        socket.emit('message', {room : roomId, msg:msg});       
+
+
+        const element = document.createElement('div');
+
+        element.textContent = msg;
+
+        element.style.textAlign = "right";
+
+        messageBox.appendChild(element);
+
+        messageInput.value = '';
+    }
+
+    function joinRoom(){
+
+        const room = roomNumber.value;
+
+        roomId = room;
+
+        socket.emit('join-room',room);
+
+    }
+
+    socket.on('new-message',(data)=>{       // Sended data so now to listen in backend io.emit uses 'new-message' so new-message used here 
+        
+        const element = document.createElement('div');
+
+        element.textContent = data;
+
+        messageBox.appendChild(element);
+    })
+
+    // To display our message on right that we are sending like in Whatsapp we added socket.on content to function also
+
+    
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,46 @@
+
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+button{
+    height: 5vh;
+    width: 10vh;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 18px;
+    color: white;
+
+}
+
+button:active{
+    opacity: 0.5;
+}
+
+
+.Start{
+    background-color: green;
+    border: 2px greenyellow solid;
+}
+
+.Stop{
+    background-color: rgb(137, 0, 0);
+    border: 2px solid red;
+}
+
+
+.Reset{
+    background-color: aqua;
+    border: 2px solid aquamarine;
+}

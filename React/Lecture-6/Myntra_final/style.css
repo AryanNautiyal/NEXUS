@@ -1,0 +1,98 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+
+.heading{
+
+    display: flex;
+
+    justify-content: space-between;
+
+    margin-bottom: 10px;
+
+    padding-top: 10px;
+
+}
+
+.images{
+
+    position: relative;
+
+    left: 40px;
+
+}
+
+.option{
+
+    padding-top: 20px;
+}
+
+.but, .pro{
+    margin-right: 10px;
+    height: 30px;
+    border: none;
+    background-color: white;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.searchbar{
+    width: 500px;
+    height: 30px;
+    position: relative;
+    top: 20px;
+    border-radius: 5px;
+    border: 0.5px white solid;
+    padding-left: 10px;
+    background-color: rgb(241, 241, 241);
+
+}
+
+.Profile{
+    padding-top: 20px;
+    padding-right: 20px;
+
+
+}
+
+
+.middle{
+    background-color: rgb(246, 246, 241);
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 50px;
+    justify-content: center;
+}
+
+.card{
+    background-color: rgb(6, 141, 6);
+    color: white;
+    margin-left: 20px;
+    margin-bottom: 20px;
+
+}
+
+
+.img-container{
+
+    margin-top: 100px;
+    margin-bottom: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.button{
+    height: 50px;
+    background-color: orange;
+    width: 300px;
+    color: white;
+    font-size: 30px;
+}
